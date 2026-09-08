@@ -1,0 +1,1005 @@
+{
+  "drone crop disease detection": [
+    {
+      "title": "Deep Learning-Powered Crop Disease Detection: Integrating Drone Imagery and Convolutional Neural Networks for Early Agricultural Disease Surveillance",
+      "authors": [
+        "Dinesh Bishokarma"
+      ],
+      "published_date": "Recent",
+      "abstract": "Early detection of crop diseases is crucial for preventing agricultural losses and ensuring food security, yet traditional visual inspection methods remain time-consuming, imprecise, and unable to scale across vast farmlands. This research presents an innovative approach that combines drone-based aerial imaging with deep learning techniques to enable real-time detection and classification of cr...",
+      "doi": "10.2139/ssrn.6341118",
+      "paper_url": "https://doi.org/10.2139/ssrn.6341118",
+      "pdf_url": "https://doi.org/10.2139/ssrn.6341118",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "posted-content",
+      "hackathon_takeaway": "Provides a baseline deep learning architecture that can be adapted or fine-tuned for your SIH prototype. Covers aerial/remote sensing methodologies that can strengthen your field data collection pipeline."
+    },
+    {
+      "title": "Affordable Crop Disease Detection with Drone Imagery and Artificial Intelligence",
+      "authors": [
+        "Vedant Mohapatra",
+        "Sasmita Mohapatra"
+      ],
+      "published_date": "2025",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1109/ipccc66453.2025.11304633",
+      "paper_url": "https://doi.org/10.1109/ipccc66453.2025.11304633",
+      "pdf_url": "https://doi.org/10.1109/ipccc66453.2025.11304633",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Covers aerial/remote sensing methodologies that can strengthen your field data collection pipeline. Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Automated Crop Health Monitoring and Drone-Based Image Processing for Crop Disease Detection in Smart Farming Using IoT",
+      "authors": [
+        "J. Arumai Ruban"
+      ],
+      "published_date": "Recent",
+      "abstract": "The innovative approach to automated CHM and disease detection in smart farming through the integration of drone-based image processing and IoT technologies. Combining information from IoT sensors and drone images can be complex, making it difficult to analyze CH effectively. To Create a comprehensive system that combines IoT sensors and drone imagery to facilitate real-time monitoring of CH, e...",
+      "doi": "10.52783/jisem.v10i45s.9154",
+      "paper_url": "https://doi.org/10.52783/jisem.v10i45s.9154",
+      "pdf_url": "https://doi.org/10.52783/jisem.v10i45s.9154",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Describes edge deployment techniques suitable for low-cost hardware demonstrations in SIH. Covers aerial/remote sensing methodologies that can strengthen your field data collection pipeline."
+    }
+  ],
+  "early detection management crop diseases": [
+    {
+      "title": "Biological Management of Crop Diseases",
+      "authors": [
+        "P. Narayanasamy"
+      ],
+      "published_date": "2024",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/9781003456834-3",
+      "paper_url": "https://doi.org/10.1201/9781003456834-3",
+      "pdf_url": "https://doi.org/10.1201/9781003456834-3",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Phyllosphere Microbial Plant Pathogens: Detection and Crop Disease Management",
+      "authors": [
+        "P. Narayanasamy"
+      ],
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/9781003456834",
+      "paper_url": "https://doi.org/10.1201/9781003456834",
+      "pdf_url": "https://doi.org/10.1201/9781003456834",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "monograph",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Crop Disease Management through Chemicals",
+      "authors": [
+        "P. Narayanasamy"
+      ],
+      "published_date": "2024",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/9781003456834-4",
+      "paper_url": "https://doi.org/10.1201/9781003456834-4",
+      "pdf_url": "https://doi.org/10.1201/9781003456834-4",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    }
+  ],
+  "driven multi vendor network security": [
+    {
+      "title": "IT security: the product vendor landscape",
+      "authors": [
+        "Barry Beal"
+      ],
+      "published_date": "2005",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/s1353-4858(05)70235-x",
+      "paper_url": "https://doi.org/10.1016/s1353-4858(05)70235-x",
+      "pdf_url": "https://doi.org/10.1016/s1353-4858(05)70235-x",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Vendor alliances aim to make Internet safe for business",
+      "authors": [
+        "Adrianne Bee"
+      ],
+      "published_date": "1996",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/s1353-4858(97)81224-x",
+      "paper_url": "https://doi.org/10.1016/s1353-4858(97)81224-x",
+      "pdf_url": "https://doi.org/10.1016/s1353-4858(97)81224-x",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "A conceptual model for network security automation: Leveraging ai-driven frameworks to enhance multi-vendor infrastructure resilience",
+      "authors": [
+        "Afees Olanrewaju Akinade",
+        "Peter Adeyemo Adepoju",
+        "Adebimpe Bolatito Ige",
+        "Adeoye Idowu Afolabi",
+        "et al."
+      ],
+      "published_date": "Recent",
+      "abstract": "The increasing complexity of multi-vendor network infrastructures presents significant challenges in maintaining robust security. Traditional network security approaches are often insufficient to address the dynamic and sophisticated nature of modern cyber threats. This study proposes a conceptual model for network security automation, leveraging Artificial Intelligence (AI)-driven frameworks t...",
+      "doi": "10.53771/ijstra.2021.1.1.0034",
+      "paper_url": "https://doi.org/10.53771/ijstra.2021.1.1.0034",
+      "pdf_url": "https://doi.org/10.53771/ijstra.2021.1.1.0034",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Demonstrates mobile-first deployment approaches ideal for SIH field demonstrations."
+    }
+  ],
+  "plant disease nutrient deficiency detection": [
+    {
+      "title": "Convolutional Neural Network Based Plant Nutrient Deficiency Detection",
+      "authors": [
+        "Sowmiya M",
+        "Krishnaveni S"
+      ],
+      "published_date": "2022",
+      "abstract": "Nutrient deficiency is a condition in plants in which the plant lacks particular amount of nutrients which are essential for the healthy state of a plant. In this paper, an automated nutrition deficiency detection system has been proposed using Convolutional Neural Network. Spatial information in an image is obtained by using Convolutional Neural Network. The proposed system can identify if the...",
+      "doi": "10.1149/10701.5625ecst",
+      "paper_url": "https://doi.org/10.1149/10701.5625ecst",
+      "pdf_url": "https://doi.org/10.1149/10701.5625ecst",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides a baseline deep learning architecture that can be adapted or fine-tuned for your SIH prototype."
+    },
+    {
+      "title": "Smart Detection of Macro Nutrient Deficiency in Soybean Plant using Convolutional Neural Network",
+      "authors": [
+        "R. Bhavani"
+      ],
+      "published_date": "Recent",
+      "abstract": "Background: Legumes play an important role in improving soil quality and nutrition in humans. Soybean is one of the legumes which are rich in protein and oil content. Nutrients deficiency in soybean plant could affect the growth of the plants and might lead to loss in its yield. The developments in modern technologies such as computer vision and deep learning are being leveraged in identifying ...",
+      "doi": "10.18805/lr-5534",
+      "paper_url": "https://doi.org/10.18805/lr-5534",
+      "pdf_url": "https://doi.org/10.18805/lr-5534",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides a baseline deep learning architecture that can be adapted or fine-tuned for your SIH prototype."
+    },
+    {
+      "title": "Detection of nutrient deficiency in plants using radial basis function neural network with a modified adaptive Kalman filter",
+      "authors": [
+        "Sathyan Anish",
+        "P Palanisamy"
+      ],
+      "published_date": "Recent",
+      "abstract": "The agriculture sector plays a significant role in the national GDP. Global agricultural industries employ advanced techniques for the early detection and characterisation of plant nutrient deficiencies to enhance crop yield. In most agriculture-dependent countries, economic growth is determined by the gross yield of entire plantations. Plants exhibit noticeable symptoms such as changes in leaf...",
+      "doi": "10.14719/pst.8380",
+      "paper_url": "https://doi.org/10.14719/pst.8380",
+      "pdf_url": "https://doi.org/10.14719/pst.8380",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides a baseline deep learning architecture that can be adapted or fine-tuned for your SIH prototype."
+    }
+  ],
+  "blockchain land registry fraud prevention": [
+    {
+      "title": "Land Registry on Blockchain",
+      "authors": [
+        "Mugdha Patil"
+      ],
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.31979/etd.2cc7-a5nd",
+      "paper_url": "https://doi.org/10.31979/etd.2cc7-a5nd",
+      "pdf_url": "https://doi.org/10.31979/etd.2cc7-a5nd",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "dissertation",
+      "hackathon_takeaway": "Outlines blockchain architecture patterns applicable to your SIH solution's trust and verification layer. Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Blockchain in Global Land Registries",
+      "authors": [
+        "Pablo L. Reiser",
+        "Michael Trübestein",
+        "Matthias Daniel Aepli"
+      ],
+      "published_date": "2026",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-658-50076-4",
+      "paper_url": "https://doi.org/10.1007/978-3-658-50076-4",
+      "pdf_url": "https://doi.org/10.1007/978-3-658-50076-4",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book",
+      "hackathon_takeaway": "Outlines blockchain architecture patterns applicable to your SIH solution's trust and verification layer. Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    }
+  ],
+  "traffic signal computer vision ambulance": [
+    {
+      "title": "A proposal for efficient 8 two way traffic signal system for pedestrian and ambulance along with violation detection",
+      "authors": [
+        "Riya Paul"
+      ],
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.18535/ijecs/v5i12.61",
+      "paper_url": "https://doi.org/10.18535/ijecs/v5i12.61",
+      "pdf_url": "https://doi.org/10.18535/ijecs/v5i12.61",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Automated traffic signal for hassle free movement of ambulance",
+      "authors": [
+        "Vasuki Shankar",
+        "Ruthvik Gautham",
+        "Vedaprakashvarma"
+      ],
+      "published_date": "2015",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1109/icecct.2015.7226114",
+      "paper_url": "https://doi.org/10.1109/icecct.2015.7226114",
+      "pdf_url": "https://doi.org/10.1109/icecct.2015.7226114",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    }
+  ],
+  "adaptive path planning collision avoidance": [
+    {
+      "title": "Multi-Path Planning on a Sphere with LMI-Based Collision Avoidance",
+      "authors": [
+        "Innocent Okoloko"
+      ],
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.5772/intechopen.71216",
+      "paper_url": "https://doi.org/10.5772/intechopen.71216",
+      "pdf_url": "https://doi.org/10.5772/intechopen.71216",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Path-Planning Algorithms for Collision Avoidance",
+      "authors": [
+        "Jie Ji",
+        "Hong Wang",
+        "Yue Ren"
+      ],
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-031-01507-6_2",
+      "paper_url": "https://doi.org/10.1007/978-3-031-01507-6_2",
+      "pdf_url": "https://doi.org/10.1007/978-3-031-01507-6_2",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Explicit Energy-Minimal Short-Term Path Planning for Collision Avoidance in Bidirectional Crowd Simulation",
+      "authors": [
+        "Saran Sillapaphiromsuk"
+      ],
+      "published_date": "Recent",
+      "abstract": "การหาเส้นทางการเดินในระยะยาวรวมกับการหลบหลีกสิ่งกีดขวางรอบๆ เป็นวิธีทั่วไปที่ถูกนำมาใช้ในการจำลองการเคลื่อนไหวของตัวตนจำลองจากตำแหน่งหนึ่งไปยังอีกตำแหน่งหนึ่ง โดยไม่ให้เกิดการชนกันระหว่างตัวตนจำลองกับวัตถุในฉากและระหว่างตัวตนจำลองด้วยกันเอง วิธีนี้สามารถให้ผลการจำลองที่ดีในสถานการณ์ที่ผู้คนสามารถเดินได้หลายทิศทาง แต่ในสถานการณ์ที่ผู้คนถูกจำกัดทิศทางการเดินให้เหลือเพียงหนึ่งหรือสองทิศทางนั้น ปรา...",
+      "doi": "10.58837/chula.the.2018.153",
+      "paper_url": "https://doi.org/10.58837/chula.the.2018.153",
+      "pdf_url": "https://doi.org/10.58837/chula.the.2018.153",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "dissertation",
+      "hackathon_takeaway": "Provides theoretical foundations and methodological approaches relevant to your SIH problem statement."
+    },
+    {
+      "title": "Consensus-Based Multipath Planning with Collision Avoidance Using Linear Matrix Inequalities",
+      "authors": [
+        "Innocent Okoloko"
+      ],
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.5772/intechopen.71288",
+      "paper_url": "https://doi.org/10.5772/intechopen.71288",
+      "pdf_url": "https://doi.org/10.5772/intechopen.71288",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Outlines blockchain architecture patterns applicable to your SIH solution's trust and verification layer. Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    }
+  ],
+  "early warning landslide risk monitoring": [
+    {
+      "title": "The Value of Soil Wetness Measurements for Regional Landslide Early Warning Systems",
+      "authors": [
+        "Manfred Stähli",
+        "Adrian Wicki"
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_23",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Establishment of an Integrated Landslide Early Warning and Monitoring System in Populated Areas",
+      "authors": [
+        "Nikolaos Depountis",
+        "Nikolaos Sabatakakis",
+        "Katerina Kavoura",
+        "Konstantinos Nikolakopoulos",
+        "et al."
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_21",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "An Integrated WebGIS System for Shallow Landslide Hazard Early Warning",
+      "authors": [
+        "Nguyen Duc Ha",
+        "Le Quoc Hung",
+        "Takahiro Sayama",
+        "Kyoji Sassa",
+        "et al."
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_22",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    },
+    {
+      "title": "Towards an Early Warning System for Instable Slopes in Georgia: The Large Tskneti-Akhaldaba-Landslide",
+      "authors": [
+        "Klaus-Peter Keilig",
+        "Markus Bauer",
+        "Peter Neumann",
+        "Kurosch Thuro"
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_34",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents NLP techniques you can integrate for text analysis or conversational interfaces in your solution."
+    }
+  ],
+  "quantum error correction": [
+    {
+      "title": "Experimental quantum error correction",
+      "authors": [
+        "Dave Bacon"
+      ],
+      "year": "2013",
+      "published_date": "2013",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1017/cbo9781139034807.023",
+      "url": "https://doi.org/10.1017/cbo9781139034807.023",
+      "paper_url": "https://doi.org/10.1017/cbo9781139034807.023",
+      "pdf_url": "https://doi.org/10.1017/cbo9781139034807.023",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    },
+    {
+      "title": "Error correction in quantum communication",
+      "authors": [
+        "Mark Wilde"
+      ],
+      "year": "2013",
+      "published_date": "2013",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1017/cbo9781139034807.026",
+      "url": "https://doi.org/10.1017/cbo9781139034807.026",
+      "paper_url": "https://doi.org/10.1017/cbo9781139034807.026",
+      "pdf_url": "https://doi.org/10.1017/cbo9781139034807.026",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    }
+  ],
+  "liquid neural networks": [
+    {
+      "title": "Double Descent Phenomenon in Liquid Time-Constant Networks, Quantized Neural Networks and Spiking Neural Networks",
+      "authors": [
+        "Hongqiao Wang",
+        "James Pope"
+      ],
+      "year": "2025",
+      "published_date": "2025",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.5220/0013133900003890",
+      "url": "https://doi.org/10.5220/0013133900003890",
+      "paper_url": "https://doi.org/10.5220/0013133900003890",
+      "pdf_url": "https://doi.org/10.5220/0013133900003890",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Presents architectural baseline, attention mechanics, or neural training objectives adaptable for empirical benchmarks.",
+      "research_takeaway": "Presents architectural baseline, attention mechanics, or neural training objectives adaptable for empirical benchmarks."
+    },
+    {
+      "title": "Call for Papers 2007: Echo State Networks and Liquid State Machines",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2006",
+      "published_date": "2006",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/j.neunet.2005.12.001",
+      "url": "https://doi.org/10.1016/j.neunet.2005.12.001",
+      "paper_url": "https://doi.org/10.1016/j.neunet.2005.12.001",
+      "pdf_url": "https://doi.org/10.1016/j.neunet.2005.12.001",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "quantum error correction fault tolerant": [
+    {
+      "title": "Fault-Tolerant Quantum Error Correction and Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Ivan Djordjevic"
+      ],
+      "year": "2012",
+      "published_date": "2012",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-385491-9.00011-3",
+      "url": "https://doi.org/10.1016/b978-0-12-385491-9.00011-3",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-385491-9.00011-3",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-385491-9.00011-3",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    },
+    {
+      "title": "Fault-Tolerant Quantum Error Correction and Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Ivan B. Djordjevic"
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-821982-9.00017-4",
+      "url": "https://doi.org/10.1016/b978-0-12-821982-9.00017-4",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-821982-9.00017-4",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-821982-9.00017-4",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    },
+    {
+      "title": "Quantum Error Correction and Fault Tolerant Quantum Computing",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/springerreference_60607",
+      "url": "https://doi.org/10.1007/springerreference_60607",
+      "paper_url": "https://doi.org/10.1007/springerreference_60607",
+      "pdf_url": "https://doi.org/10.1007/springerreference_60607",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "reference-entry",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    },
+    {
+      "title": "Fault-Tolerant Quantum Computing",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2008",
+      "published_date": "2008",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/b15868-6",
+      "url": "https://doi.org/10.1201/b15868-6",
+      "paper_url": "https://doi.org/10.1201/b15868-6",
+      "pdf_url": "https://doi.org/10.1201/b15868-6",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation.",
+      "research_takeaway": "Explores quantum computational mechanics, circuit error suppression, or fault-tolerant state formulation."
+    }
+  ],
+  "drone related topics": [
+    {
+      "title": "drone-related-jobs-projected-to-rise",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1177/237455680202.n5",
+      "url": "https://doi.org/10.1177/237455680202.n5",
+      "paper_url": "https://doi.org/10.1177/237455680202.n5",
+      "pdf_url": "https://doi.org/10.1177/237455680202.n5",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "other",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Related Topics",
+      "authors": [
+        "Richard Foley"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "This chapter examines Wittgenstein’s critique of philosophy’s premium on simplicity and generality. Although philosophy overlaps with the sciences, it also leans toward the humanities in the open-ended character of its core issues. Additionally, the author discusses Alasdair MacIntyre’s and Jean-Paul Sartre’s different views on the appeal of stories, and discusses as well how the insights of st...",
+      "doi": "10.1093/oso/9780190865122.003.0004",
+      "url": "https://doi.org/10.1093/oso/9780190865122.003.0004",
+      "paper_url": "https://doi.org/10.1093/oso/9780190865122.003.0004",
+      "pdf_url": "https://doi.org/10.1093/oso/9780190865122.003.0004",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book",
+      "hackathon_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy.",
+      "research_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy."
+    },
+    {
+      "title": "Related topics",
+      "authors": [
+        "William Clegg"
+      ],
+      "year": "2015",
+      "published_date": "2015",
+      "abstract": "This chapter covers the core subject of X-ray single-crystal diffraction for the determination of chemical compounds. It analyses the use of neutrons instead of X-rays and of powder diffraction. It also discusses the applications to biological macromolecules and crystal structure prediction. The chapter explains how X-rays are used for crystal structure determination, in that they have waveleng...",
+      "doi": "10.1093/hesc/9780198700975.003.0004",
+      "url": "https://doi.org/10.1093/hesc/9780198700975.003.0004",
+      "paper_url": "https://doi.org/10.1093/hesc/9780198700975.003.0004",
+      "pdf_url": "https://doi.org/10.1093/hesc/9780198700975.003.0004",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Some Related Topics",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2012",
+      "published_date": "2012",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1142/9789814383608_0006",
+      "url": "https://doi.org/10.1142/9789814383608_0006",
+      "paper_url": "https://doi.org/10.1142/9789814383608_0006",
+      "pdf_url": "https://doi.org/10.1142/9789814383608_0006",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Algebraic Cycles and Related Topics",
+      "authors": [
+        "Fumio Hazama"
+      ],
+      "year": "1995",
+      "published_date": "1995",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1142/9789814533201",
+      "url": "https://doi.org/10.1142/9789814533201",
+      "paper_url": "https://doi.org/10.1142/9789814533201",
+      "pdf_url": "https://doi.org/10.1142/9789814533201",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Topics",
+      "authors": [
+        "Aristotle"
+      ],
+      "year": "1997",
+      "published_date": "1997",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1093/oseo/instance.00258598",
+      "url": "https://doi.org/10.1093/oseo/instance.00258598",
+      "paper_url": "https://doi.org/10.1093/oseo/instance.00258598",
+      "pdf_url": "https://doi.org/10.1093/oseo/instance.00258598",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "how weather today|6": [
+    {
+      "title": "Cold weather kills more people than hot weather",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.028899",
+      "url": "https://doi.org/10.1063/pt.5.028899",
+      "paper_url": "https://doi.org/10.1063/pt.5.028899",
+      "pdf_url": "https://doi.org/10.1063/pt.5.028899",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "US weather satellite fails",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.026381",
+      "url": "https://doi.org/10.1063/pt.5.026381",
+      "paper_url": "https://doi.org/10.1063/pt.5.026381",
+      "pdf_url": "https://doi.org/10.1063/pt.5.026381",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Meteorology: Bad weather ahead",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.020147",
+      "url": "https://doi.org/10.1063/pt.5.020147",
+      "paper_url": "https://doi.org/10.1063/pt.5.020147",
+      "pdf_url": "https://doi.org/10.1063/pt.5.020147",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Cold weather erodes mountains",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.027593",
+      "url": "https://doi.org/10.1063/pt.5.027593",
+      "paper_url": "https://doi.org/10.1063/pt.5.027593",
+      "pdf_url": "https://doi.org/10.1063/pt.5.027593",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Stars Have Earth-like weather",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.021228",
+      "url": "https://doi.org/10.1063/pt.5.021228",
+      "paper_url": "https://doi.org/10.1063/pt.5.021228",
+      "pdf_url": "https://doi.org/10.1063/pt.5.021228",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Scientists tackle midrange weather forecasts",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1063/pt.5.021754",
+      "url": "https://doi.org/10.1063/pt.5.021754",
+      "paper_url": "https://doi.org/10.1063/pt.5.021754",
+      "pdf_url": "https://doi.org/10.1063/pt.5.021754",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "suggest any idea capstone aiml|6": [
+    {
+      "title": "Is There Any Evidence to Suggest That Poor Posture Bears Any Casual Relation to Poor Health in Children?*†",
+      "authors": [
+        "Robert B. Osgood"
+      ],
+      "year": "1923",
+      "published_date": "1923",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1093/ptj/3.3.18",
+      "url": "https://doi.org/10.1093/ptj/3.3.18",
+      "paper_url": "https://doi.org/10.1093/ptj/3.3.18",
+      "pdf_url": "https://doi.org/10.1093/ptj/3.3.18",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Have you any idea of it?",
+      "authors": [
+        "Katalin G. Havas"
+      ],
+      "year": "1999",
+      "published_date": "1999",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1163/9789004457904_003",
+      "url": "https://doi.org/10.1163/9789004457904_003",
+      "paper_url": "https://doi.org/10.1163/9789004457904_003",
+      "pdf_url": "https://doi.org/10.1163/9789004457904_003",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Useful Forms and Lists for Big-Idea Groups",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2016",
+      "published_date": "2016",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.4135/9781506348605.n7",
+      "url": "https://doi.org/10.4135/9781506348605.n7",
+      "paper_url": "https://doi.org/10.4135/9781506348605.n7",
+      "pdf_url": "https://doi.org/10.4135/9781506348605.n7",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Big-Idea Groups : Scaffolded Reading Instruction Where Engagement Rules",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2016",
+      "published_date": "2016",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.4135/9781506348605.n1",
+      "url": "https://doi.org/10.4135/9781506348605.n1",
+      "paper_url": "https://doi.org/10.4135/9781506348605.n1",
+      "pdf_url": "https://doi.org/10.4135/9781506348605.n1",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Teaching Ethical AIML (Artificial Intelligence/Machine Learning) Playfully: Insights From a Middle School AIML Curriculum Implementation (Poster 5)",
+      "authors": [
+        "Andy Stoiber"
+      ],
+      "year": "2024",
+      "published_date": "2024",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.3102/ip.24.2108119",
+      "url": "https://doi.org/10.3102/ip.24.2108119",
+      "paper_url": "https://doi.org/10.3102/ip.24.2108119",
+      "pdf_url": "https://doi.org/10.3102/ip.24.2108119",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Computer Science Capstone Course Senior Projects: From Project Idea to Prototype Implementation",
+      "authors": [
+        "S.M. Dascalu",
+        "Y.L. Varol",
+        "F.C. Harris",
+        "B.T. Westphal"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1109/fie.2005.1612293",
+      "url": "https://doi.org/10.1109/fie.2005.1612293",
+      "paper_url": "https://doi.org/10.1109/fie.2005.1612293",
+      "pdf_url": "https://doi.org/10.1109/fie.2005.1612293",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "topics related aiml capstone|6": [
+    {
+      "title": "Prospective implementation of topics related to the Internet of bio-nano things in the capstone project in the electrical engineering program",
+      "authors": [
+        "Huber Nieto-Chaupis"
+      ],
+      "year": "2017",
+      "published_date": "2017",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1109/icacit.2017.8358106",
+      "url": "https://doi.org/10.1109/icacit.2017.8358106",
+      "paper_url": "https://doi.org/10.1109/icacit.2017.8358106",
+      "pdf_url": "https://doi.org/10.1109/icacit.2017.8358106",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Work in Progress: Incorporating Systems Engineering Topics and Practices into Mechanical Engineering Capstone Design",
+      "authors": [
+        "Mark Walter"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.18260/1-2--60903",
+      "url": "https://doi.org/10.18260/1-2--60903",
+      "paper_url": "https://doi.org/10.18260/1-2--60903",
+      "pdf_url": "https://doi.org/10.18260/1-2--60903",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Foundations and Capstone; Core Values and Hot Topics; Ethics-LX; SkyTech; and The Green Business Laboratory: Simulations for Sustainability EducationFoundations and Capstone; Core Values and Hot Topics; Ethics-LX; SkyTech; and The Green Business Laboratory: Simulations for Sustainability Education",
+      "authors": [
+        "Mark Heuer"
+      ],
+      "year": "2010",
+      "published_date": "2010",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.5465/amle.9.3.zqr556",
+      "url": "https://doi.org/10.5465/amle.9.3.zqr556",
+      "paper_url": "https://doi.org/10.5465/amle.9.3.zqr556",
+      "pdf_url": "https://doi.org/10.5465/amle.9.3.zqr556",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "An L/C Meter Project Provides A Capstone Experience In Topics Of Applied Design Course",
+      "authors": [
+        "James Everly"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.18260/1-2--615",
+      "url": "https://doi.org/10.18260/1-2--615",
+      "paper_url": "https://doi.org/10.18260/1-2--615",
+      "pdf_url": "https://doi.org/10.18260/1-2--615",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Learning From Renewable Energy Related Capstone Projects",
+      "authors": [
+        "Yuyi Lin"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.18260/1-2--16486",
+      "url": "https://doi.org/10.18260/1-2--16486",
+      "paper_url": "https://doi.org/10.18260/1-2--16486",
+      "pdf_url": "https://doi.org/10.18260/1-2--16486",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Evaluates thermodynamic efficiency, material degradation kinetics, or energy density optimization.",
+      "research_takeaway": "Evaluates thermodynamic efficiency, material degradation kinetics, or energy density optimization."
+    },
+    {
+      "title": "Teaching Ethical AIML (Artificial Intelligence/Machine Learning) Playfully: Insights From a Middle School AIML Curriculum Implementation (Poster 5)",
+      "authors": [
+        "Andy Stoiber"
+      ],
+      "year": "2024",
+      "published_date": "2024",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.3102/ip.24.2108119",
+      "url": "https://doi.org/10.3102/ip.24.2108119",
+      "paper_url": "https://doi.org/10.3102/ip.24.2108119",
+      "pdf_url": "https://doi.org/10.3102/ip.24.2108119",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ]
+}
