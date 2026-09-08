@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0d0b0e;
+    color: #eef0eb;
+    font-family: "Plus Jakarta Sans", Inter, sans-serif;
+  }
+}
+
+.glass-panel {
+  background: rgba(21, 16, 21, 0.94);
+  border: 1px solid rgba(231, 36, 41, 0.28);
+}
+
+.glass-panel-hover {
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(37, 99, 235, 0.8);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.spider-shell {
+  background-color: #0d0b0e;
+  background-image: url('./assets/spider-research-bg.png');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.spider-shell::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(13, 11, 14, 0.84);
+}
+
+.spider-shell > *:not(.fixed):not([class*="fixed"]) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0b0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5b2638;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e62429;
+}
