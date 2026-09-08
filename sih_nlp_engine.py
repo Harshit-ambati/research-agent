@@ -90,9 +90,34 @@ SYNONYM_MAP = {
     "waste": ["solid waste management", "recycling automation", "cleanliness"]
 }
 
+# Conversational intent patterns — queries that should be answered by LLM, not vector search
+CONVERSATIONAL_PATTERNS = [
+    r"^(what|how|why|when|where|who|which|can you|could you|tell me|explain|describe|is it|are there|do you know)",
+    r"\b(help me|i want to know|i need to understand|what is|what are|how to|how do|how can)",
+    r"\b(prepare|preparation|tips|advice|guide|suggest|recommend|difference between|compare|vs\.?)",
+    r"\b(judg|criteria|scoring|rules|eligibility|register|team size|prize|deadline|schedule|theme)",
+    r"\b(mentor|coach|strategy|winning|win|approach|methodology|framework)",
+    r"\?(\s|$)",  # Ends with a question mark
+]
+
+
 class NLPEngine:
     def __init__(self):
         self.nlp = nlp
+
+    def is_conversational_query(self, text: str) -> bool:
+        """Detect whether a prompt is a conversational question vs. a keyword search."""
+        text_s = text.strip().lower()
+        if len(text_s.split()) < 2:
+            return False  # Single word = search term
+        if "?" in text_s:
+            return True
+        for pattern in CONVERSATIONAL_PATTERNS:
+            if re.search(pattern, text_s, re.IGNORECASE):
+                # Make sure it doesn't look like a keyword search with action words
+                # e.g. "drone crop disease detection" has no question pattern
+                return True
+        return False
 
     def parse_prompt(self, user_prompt: str) -> Dict[str, Any]:
         """
@@ -100,6 +125,7 @@ class NLPEngine:
         and query expansions from user natural language input.
         """
         raw_text = str(user_prompt or "").strip()
+        is_conversational = self.is_conversational_query(raw_text)
         if not raw_text:
             return {
                 "raw_query": "",
@@ -109,7 +135,8 @@ class NLPEngine:
                 "inferred_category": "Software",
                 "suggested_domains": ["Smart Innovation"],
                 "expanded_keywords": [],
-                "summary": "Empty query"
+                "summary": "Empty query",
+                "is_conversational": False,
             }
 
         text_lower = raw_text.lower()
@@ -183,18 +210,25 @@ class NLPEngine:
 
         # 8. Human-friendly Summary
         tech_str = ", ".join(detected_tech) if detected_tech else "General Tech"
-        summary = f"Detected {inferred_category} solution in {suggested_domains[0]}. Technical stack: {tech_str}."
+        if is_conversational:
+            summary = f"Conversational query detected. Routing to AI Mentor for direct answer."
+        else:
+            summary = f"Detected {inferred_category} solution in {suggested_domains[0]}. Technical stack: {tech_str}."
 
         return {
             "raw_query": raw_text,
             "clean_query": " ".join(filtered_words),
             "enriched_vector_query": enriched_vector_query.strip(),
             "entities": key_entities,
+            "extracted_entities": key_entities,
             "tech_stack": detected_tech,
+            "detected_tech": detected_tech,
             "inferred_category": inferred_category,
             "suggested_domains": suggested_domains,
+            "inferred_domain": suggested_domains[0] if suggested_domains else "General Technology",
             "expanded_keywords": list(set(expanded_keywords)),
-            "summary": summary
+            "summary": summary,
+            "is_conversational": is_conversational,
         }
 
 # Global singleton instance
