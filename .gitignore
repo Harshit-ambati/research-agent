@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+ENV/
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+*.local
+
+# Chroma cache / temp
+data/vector_store/
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
