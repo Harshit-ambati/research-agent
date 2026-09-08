@@ -482,5 +482,182 @@
     ],
     "total_datasets": 0,
     "total_repos": 1
+  },
+  "drone projects": {
+    "query": "drone projects",
+    "cleaned_query": "drone projects",
+    "datasets": [],
+    "repositories": [
+      {
+        "name": "zszszszsz/.config",
+        "url": "https://github.com/zszszszsz/.config",
+        "description": "# # Automatically generated file; DO NOT EDIT. # OpenWrt Configuration # CONFIG_MODULES=y CONFIG_HAVE_DOT_CONFIG=y # CONFIG_TARGET_sunxi is not set # CONFIG_TARGET_apm821xx is not set # CONFIG_TARG...",
+        "stars": 352,
+        "forks": 97,
+        "language": "Shell",
+        "license": "MIT",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "abusufyanvu/6S191_MIT_DeepLearning",
+        "url": "https://github.com/abusufyanvu/6S191_MIT_DeepLearning",
+        "description": "MIT Introduction to Deep Learning (6.S191) Instructors: Alexander Amini and Ava Soleimany Course Information Summary Prerequisites Schedule Lectures Labs, Final Projects, Grading, and Prizes Softwa...",
+        "stars": 262,
+        "forks": 81,
+        "language": "Jupyter Notebook",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "uzh-rpg/deep_drone_acrobatics",
+        "url": "https://github.com/uzh-rpg/deep_drone_acrobatics",
+        "description": "Code for the project Deep Drone Acrobatics.",
+        "stars": 247,
+        "forks": 72,
+        "language": "Python",
+        "license": "MIT",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "peterkrull/quad",
+        "url": "https://github.com/peterkrull/quad",
+        "description": "Firmware, hardware and documentation for my autonomous quad copter project",
+        "stars": 211,
+        "forks": 12,
+        "language": "Rust",
+        "license": "GPL-3.0",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "mathworks/simulinkDroneReferenceApp",
+        "url": "https://github.com/mathworks/simulinkDroneReferenceApp",
+        "description": "This Simulink Project shows the implementation of a Remotely Piloted Radio-Control fixed-wing aircraft (i.e. Drone, UAV), an autopilot for flight stabilization, and an operator interface to control...",
+        "stars": 190,
+        "forks": 92,
+        "language": "C",
+        "license": "NOASSERTION",
+        "source": "GitHub Open Source"
+      }
+    ],
+    "total_datasets": 0,
+    "total_repos": 5
+  },
+  "smart traffic management system": {
+    "query": "Smart Traffic Management System",
+    "cleaned_query": "smart traffic management system",
+    "datasets": [],
+    "repositories": [
+      {
+        "name": "sunilkumarmaurya786693/Intelligence-traffic-monitoring-system",
+        "url": "https://github.com/sunilkumarmaurya786693/Intelligence-traffic-monitoring-system",
+        "description": "# Intelligence traffic monitoring system ### About Due to a huge number of vehicles ,very busy road and parking which may not be possible manually as a human being, tends to get fatigued due to mon...",
+        "stars": 84,
+        "forks": 12,
+        "language": "JavaScript",
+        "license": "MIT",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "Aryia-Behroziuan/References",
+        "url": "https://github.com/Aryia-Behroziuan/References",
+        "description": "Poole, Mackworth & Goebel 1998, p. 1. Russell & Norvig 2003, p. 55. Definition of AI as the study of intelligent agents: Poole, Mackworth & Goebel (1998), which provides the version that is used in...",
+        "stars": 67,
+        "forks": 12,
+        "language": "Python",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "shubham001official/Smart-Adaptive-Traffic-Management-System",
+        "url": "https://github.com/shubham001official/Smart-Adaptive-Traffic-Management-System",
+        "description": "🚗🚦 Introducing our Smart Adaptive Traffic Management System! 📷🧠 Using YOLO v8 object detection & CCTV cameras, we analyze real-time traffic. By tracking vehicles 🚙 & pedestrians 🚶, we enhance signa...",
+        "stars": 58,
+        "forks": 4,
+        "language": "Python",
+        "license": "GPL-3.0",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "iamrishav111/Smart-Traffic-Management-System",
+        "url": "https://github.com/iamrishav111/Smart-Traffic-Management-System",
+        "description": "Deals with an idea to Remove Traffic Congestion in metropolitan cities and maintain smooth flow of traffic thereby reducing Traffic Jams.",
+        "stars": 51,
+        "forks": 18,
+        "language": "Python",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "codefeeder/Smart-Traffic-Management-System",
+        "url": "https://github.com/codefeeder/Smart-Traffic-Management-System",
+        "description": "The traffic light duration is calculated using a model calculating weighted mean of the following factors :- a) The congestion coefficient calculated using image recognition applied on live feed ca...",
+        "stars": 45,
+        "forks": 12,
+        "language": "Python",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      }
+    ],
+    "total_datasets": 0,
+    "total_repos": 5
+  },
+  "drone surveillance": {
+    "query": "drone surveillance",
+    "cleaned_query": "drone surveillance",
+    "datasets": [],
+    "repositories": [
+      {
+        "name": "Ank-Cha/Social-Distancing-Analyser-COVID-19",
+        "url": "https://github.com/Ank-Cha/Social-Distancing-Analyser-COVID-19",
+        "description": "A social distancing analyzer AI tool to regulate social distancing protocol using video surveillance of CCTV cameras and drones. Social Distancing Analyser to prevent COVID19",
+        "stars": 413,
+        "forks": 194,
+        "language": "Python",
+        "license": "NOASSERTION",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "nia194/Object-Detection",
+        "url": "https://github.com/nia194/Object-Detection",
+        "description": "Object-Detection From Drone Surveillance (VisDrone Dataset)",
+        "stars": 50,
+        "forks": 15,
+        "language": "Jupyter Notebook",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "koesan/ORCUS",
+        "url": "https://github.com/koesan/ORCUS",
+        "description": "ORCUS - Multi-drone kamikaze system for autonomous area surveillance and target engagement. Intelligent grid partitioning prevents collisions during parallel operations. Drones scan zones, detect h...",
+        "stars": 44,
+        "forks": 15,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "e-candeloro/SAURUSS-Autonomous-Drone-Surveillance",
+        "url": "https://github.com/e-candeloro/SAURUSS-Autonomous-Drone-Surveillance",
+        "description": "An autonomous drone and sensor based surveillance system that use a Tello Drone, an Arduino, a Raspberry Pi and an Android smartphone.",
+        "stars": 34,
+        "forks": 5,
+        "language": "C",
+        "license": "Open Source",
+        "source": "GitHub Open Source"
+      },
+      {
+        "name": "Dicklesworthstone/franken_surveillance_system",
+        "url": "https://github.com/Dicklesworthstone/franken_surveillance_system",
+        "description": "Pure-Rust, evidence-native, local-first sensor fabric and semantic control plane for owner-authorized cameras and capture drones",
+        "stars": 24,
+        "forks": 3,
+        "language": "Rust",
+        "license": "NOASSERTION",
+        "source": "GitHub Open Source"
+      }
+    ],
+    "total_datasets": 0,
+    "total_repos": 5
   }
 }

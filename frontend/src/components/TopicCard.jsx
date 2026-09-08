@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Scale, Check, Building2 } from 'lucide-react';
+import { Magnet } from './reactbits';
+import { SpiderSense, SpiderWeb } from './SpiderIcons';
 
 export default function TopicCard({
   topic,
@@ -43,12 +45,13 @@ export default function TopicCard({
             </span>
           </div>
 
-          {/* Relevance Bar */}
+          {/* Relevance Bar with Spider-Sense Indicator */}
           {matchPct != null && (
-            <div className="flex items-center gap-2" title={`Vector Cosine Match: ${matchPct}%`}>
-              <div className="w-16 h-1.5 rounded-full bg-dark-950 overflow-hidden border border-slate-700">
+            <div className="flex items-center gap-1.5" title={`Vector Cosine Match: ${matchPct}%`}>
+              <SpiderSense className="w-3.5 h-3.5 text-cyan-400 shrink-0" glow={false} />
+              <div className="w-14 h-1.5 rounded-full bg-dark-950 overflow-hidden border border-slate-700">
                 <div
-                  className="h-full bg-red-500 rounded-full"
+                  className="h-full bg-gradient-to-r from-red-600 to-cyan-400 rounded-full"
                   style={{ width: `${Math.min(100, Math.max(10, matchPct))}%` }}
                 />
               </div>
@@ -123,14 +126,17 @@ export default function TopicCard({
           <span>{isCompared ? 'Compared' : 'Compare'}</span>
         </button>
 
-        <button
-          type="button"
-          onClick={() => onOpenDetail(topic)}
-          className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-md text-xs font-semibold bg-red-600 text-white hover:bg-red-500 transition-all duration-150 cursor-pointer"
-        >
-          <span>Explore & Advisory</span>
-          <ArrowUpRight className="w-3.5 h-3.5" />
-        </button>
+        <Magnet padding={18} magnetStrength={0.2}>
+          <button
+            type="button"
+            onClick={() => onOpenDetail(topic)}
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-md text-xs font-semibold bg-red-600 text-white hover:bg-red-500 transition-all duration-150 cursor-pointer shadow-sm shadow-red-950/60"
+          >
+            <SpiderWeb className="w-3.5 h-3.5 text-cyan-200 shrink-0" />
+            <span>Explore & Advisory</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </button>
+        </Magnet>
       </div>
     </div>
   );

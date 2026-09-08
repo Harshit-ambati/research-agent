@@ -24,17 +24,20 @@ from typing import Dict, Any, List, Optional, Tuple
 from pathlib import Path
 
 # .env loader (uses python-dotenv if available, else manual parse)
-try:
-    from dotenv import load_dotenv
-    load_dotenv(dotenv_path=Path(__file__).parent / ".env", override=False)
-except ImportError:
-    _env_file = Path(__file__).parent / ".env"
-    if _env_file.exists():
-        for line in _env_file.read_text(encoding="utf-8").splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                k, _, v = line.partition("=")
-                os.environ.setdefault(k.strip(), v.strip())
+def reload_env():
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(dotenv_path=Path(__file__).parent / ".env", override=True)
+    except ImportError:
+        _env_file = Path(__file__).parent / ".env"
+        if _env_file.exists():
+            for line in _env_file.read_text(encoding="utf-8").splitlines():
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, _, v = line.partition("=")
+                    os.environ[k.strip()] = v.strip()
+
+reload_env()
 
 # ─── Provider Registry ────────────────────────────────────────────────────────
 
@@ -117,33 +120,30 @@ class LLMEngine:
     # ─── Config & Status ─────────────────────────────────────────────────────
 
     def _auto_detect_provider(self):
-        """Try each provider in priority order, picking the first with a key."""
-        priority = ["gemini", "groq", "openai", "ollama"]
-        if self._provider and self._provider in PROVIDERS:
-            # Respect explicit config
-            prov = PROVIDERS[self._provider]
+        """Try each provider in priority order, picking the first with a valid key."""
+        reload_env()
+        # First check explicitly configured provider
+        env_prov = os.environ.get("LLM_PROVIDER", "").strip().lower()
+        if env_prov and env_prov in PROVIDERS:
+            prov = PROVIDERS[env_prov]
+            self._provider = env_prov
             if not prov["needs_key"]:
                 self._active = True
             else:
-                key = self._api_key or os.environ.get(prov["key_env"], "")
+                key = os.environ.get("LLM_API_KEY", "") or os.environ.get(prov["key_env"], "")
                 self._active = bool(key)
                 self._api_key = key
-            if not self._model:
-                self._model = PROVIDERS[self._provider]["default_model"]
+            self._model = os.environ.get("LLM_MODEL", "") or prov["default_model"]
             return
 
-        for p in priority:
+        # Check for any API keys in environment
+        for p in ["groq", "gemini", "openai"]:
             prov = PROVIDERS[p]
-            if not prov["needs_key"]:
-                self._provider = p
-                self._model = self._model or prov["default_model"]
-                self._active = True
-                return
             key = os.environ.get(prov["key_env"], "")
             if key:
                 self._provider = p
                 self._api_key = key
-                self._model = self._model or prov["default_model"]
+                self._model = prov["default_model"]
                 self._active = True
                 return
 
@@ -262,6 +262,14 @@ class LLMEngine:
                 return self._call_openai_compat(prompt, system, history, key, mdl, max_tokens, temperature, timeout, prov["base_url"])
             elif p == "ollama":
                 return self._call_ollama(prompt, system, history, mdl, max_tokens, temperature, timeout)
+        except urllib.error.HTTPError as e:
+            try:
+                err_data = json.loads(e.read().decode("utf-8"))
+                msg = err_data.get("error", {}).get("message") or str(e)
+                self._last_error = f"{p.upper()} ({e.code}): {msg}"
+            except Exception:
+                self._last_error = f"{p.upper()} ({e.code}): {str(e)}"
+            return None
         except Exception as e:
             self._last_error = str(e)
             return None
@@ -738,12 +746,36 @@ Retrieved Datasets:
             # Informative offline assistant response
             return f"💡 **Offline Research Note regarding '{user_message}':**\n\nBased on the retrieved research for **{query}**:\n- **Key Insights:** {findings or 'Literature shows active experimental focus on architectural optimization.'}\n- **Open Challenges:** {challenges or 'Scalability and empirical benchmarking remain focal bottlenecks.'}\n\n*(To unlock dynamic interactive multi-turn AI reasoning, connect Gemini, Groq, OpenAI, or local Ollama via LLM Settings in the top bar.)*"
 
-        return self._call_llm(
+        llm_resp = self._call_llm(
             user_message,
             system=system_prompt,
             history=history,
             max_tokens=900,
             temperature=0.6,
+        )
+        if llm_resp:
+            return llm_resp
+
+        # Robust grounded fallback if remote LLM call failed (e.g. 429 quota exhaustion, network):
+        err_msg = self._last_error or "AI provider did not return a response."
+        is_quota = "quota" in err_msg.lower() or "credit" in err_msg.lower() or "429" in err_msg
+        advisory_note = (
+            "⚠️ **OpenAI API Notice (Credit Balance Exhausted - 429):** Your configured OpenAI key has 0 remaining credits.\n"
+            "👉 *Tip: Open **LLM Settings** in the top navigation bar to switch to **Groq** (free Llama 3.3 70B), **Google Gemini** (free tier), or **Ollama** (offline).*\n\n---\n\n"
+            if is_quota else
+            f"⚠️ **AI Provider Notice ({err_msg}):**\n\n---\n\n"
+        )
+
+        return (
+            f"{advisory_note}"
+            f"🔬 **Grounded Research Analysis for \"{user_message}\":**\n\n"
+            f"Based on the synthesized research dossier for **{query}**:\n"
+            f"- **Executive Summary:** {exec_summary or 'Multi-source empirical research synthesized.'}\n"
+            f"- **Key Literature Insights:**\n{findings or '- Active academic and industry research underway.'}\n"
+            f"- **Critical Open Challenges:**\n{challenges or '- Novelty verification and scalable implementation.'}\n"
+            f"- **Retrieved Peer-Reviewed Evidence:**\n{papers_str or '- Check Literature tab for arXiv/CrossRef DOIs.'}\n"
+            f"- **Patent & Innovation Landscape:**\n{patents_str or '- Check Patents tab for IP landscape.'}\n\n"
+            f"*Tip: Use the tabs above to explore full paper abstracts, patent claims, and dataset downloads.*"
         )
 
     def generate_strategic_advisory(
@@ -1068,13 +1100,25 @@ Respond in JSON format:
 
         system_with_context = SYSTEM_MENTOR + "\n\n" + context
 
-        return self._call_llm(
+        resp = self._call_llm(
             user_message,
             system=system_with_context,
             history=history,
             max_tokens=700,
             temperature=0.7,
         )
+        if resp:
+            return resp
+
+        err_msg = self._last_error or "AI provider did not return a response."
+        is_quota = "quota" in err_msg.lower() or "credit" in err_msg.lower() or "429" in err_msg
+        if is_quota:
+            return (
+                f"⚠️ **OpenAI Credit Balance Exhausted (HTTP 429):**\n\n"
+                f"Your configured OpenAI API key has run out of credits (`credit_balance_exhausted`).\n\n"
+                f"To keep chatting, please open **LLM Settings** in the top navigation bar and switch to a free provider like **Groq** (free Llama 3.3 70B), **Google Gemini** (free tier), or **Ollama**."
+            )
+        return f"⚠️ **AI Mentor Notice:** {err_msg}. Please check your LLM configuration in the top bar."
 
 
 # Global singleton

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Clock3, RotateCcw, Trash2 } from 'lucide-react';
+import { Magnet } from './reactbits';
 
 export default function RecentSearches({ searches, onSelect, onClear }) {
   if (!searches.length) return null;
@@ -11,16 +12,17 @@ export default function RecentSearches({ searches, onSelect, onClear }) {
           <Clock3 className="w-3.5 h-3.5" /> Recent in this session
         </span>
         {searches.map((search) => (
-          <button
-            key={search}
-            type="button"
-            onClick={() => onSelect(search)}
-            className="inline-flex max-w-full items-center gap-1.5 rounded-md border border-slate-700 bg-dark-850 px-2.5 py-1.5 text-xs text-slate-300 transition-colors hover:border-red-500/60 hover:text-red-200"
-            title={`Run search: ${search}`}
-          >
-            <RotateCcw className="h-3 w-3 shrink-0" />
-            <span className="truncate">{search}</span>
-          </button>
+          <Magnet key={search} padding={15} magnetStrength={0.15}>
+            <button
+              type="button"
+              onClick={() => onSelect(search)}
+              className="inline-flex max-w-full items-center gap-1.5 rounded-md border border-slate-700 bg-dark-850 px-2.5 py-1.5 text-xs text-slate-300 transition-colors hover:border-red-500/60 hover:text-red-200 cursor-pointer"
+              title={`Run search: ${search}`}
+            >
+              <RotateCcw className="h-3 w-3 shrink-0" />
+              <span className="truncate">{search}</span>
+            </button>
+          </Magnet>
         ))}
         <button
           type="button"

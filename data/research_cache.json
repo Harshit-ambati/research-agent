@@ -1001,5 +1001,435 @@
       "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
       "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
     }
+  ],
+  "drone projects|6": [
+    {
+      "title": "Do-It-Yourself (DIY) drone projects",
+      "authors": [
+        "Ralph DeFrangesco",
+        "Stephanie DeFrangesco"
+      ],
+      "year": "2022",
+      "published_date": "2022",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/9781003201533-9",
+      "url": "https://doi.org/10.1201/9781003201533-9",
+      "paper_url": "https://doi.org/10.1201/9781003201533-9",
+      "pdf_url": "https://doi.org/10.1201/9781003201533-9",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Projects awarded £5m funding for AI and drone technology to tackle UK drug deaths",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2023",
+      "published_date": "2023",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1211/pj.2023.1.195888",
+      "url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "paper_url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "pdf_url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "A new drone chasing drone approach based on deep reinforcement learning with accelerated rewards",
+      "authors": [
+        "Ziya Tan",
+        "Mehmet Karaköse"
+      ],
+      "year": "2025",
+      "published_date": "2025",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/j.softx.2025.102201",
+      "url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "paper_url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "pdf_url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "USING PROGRAMMABLE DRONE IN EDUCATIONAL PROJECTS AND COMPETITIONS",
+      "authors": [
+        "Pavel Petrovič",
+        "Peter Verčimák"
+      ],
+      "year": "2023",
+      "published_date": "2023",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.21125/edulearn.2023.1472",
+      "url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "paper_url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "pdf_url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Assessing Projects for Drone Development",
+      "authors": [
+        "A. I. Tikhonov",
+        "N. V. Prosvirina"
+      ],
+      "year": "2023",
+      "published_date": "2023",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.3103/s1068798x23050222",
+      "url": "https://doi.org/10.3103/s1068798x23050222",
+      "paper_url": "https://doi.org/10.3103/s1068798x23050222",
+      "pdf_url": "https://doi.org/10.3103/s1068798x23050222",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "The program of potential projects implementation for the optimal directions of the drone industry development for military and civilian applications",
+      "authors": [
+        "Anatoliy A. (Anatolii) Shiyan (Shyian)",
+        "Liliia Nikiforova"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.2139/ssrn.4971146",
+      "url": "https://doi.org/10.2139/ssrn.4971146",
+      "paper_url": "https://doi.org/10.2139/ssrn.4971146",
+      "pdf_url": "https://doi.org/10.2139/ssrn.4971146",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "posted-content",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    }
+  ],
+  "traffic management|6": [
+    {
+      "title": "Active traffic management: adaptive traffic signal control",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1036/1097-8542.br0106141",
+      "url": "https://doi.org/10.1036/1097-8542.br0106141",
+      "paper_url": "https://doi.org/10.1036/1097-8542.br0106141",
+      "pdf_url": "https://doi.org/10.1036/1097-8542.br0106141",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "dataset",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Governance of Air Traffic Management",
+      "authors": [
+        "Margaret Arblaster"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-811118-5.00003-5",
+      "url": "https://doi.org/10.1016/b978-0-12-811118-5.00003-5",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-811118-5.00003-5",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-811118-5.00003-5",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy.",
+      "research_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy."
+    },
+    {
+      "title": "Governance of Air Traffic Management",
+      "authors": [
+        "Margaret Arblaster"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-811118-5.00004-7",
+      "url": "https://doi.org/10.1016/b978-0-12-811118-5.00004-7",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-811118-5.00004-7",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-811118-5.00004-7",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy.",
+      "research_takeaway": "Analyzes targeted genomic modification, vector delivery mechanisms, or molecular pathway efficacy."
+    },
+    {
+      "title": "The Air Traffic Management Industry",
+      "authors": [
+        "Margaret Arblaster"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-811118-5.00001-1",
+      "url": "https://doi.org/10.1016/b978-0-12-811118-5.00001-1",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-811118-5.00001-1",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-811118-5.00001-1",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Economic Regulation of Air Traffic Management",
+      "authors": [
+        "Margaret Arblaster"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-811118-5.00007-2",
+      "url": "https://doi.org/10.1016/b978-0-12-811118-5.00007-2",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-811118-5.00007-2",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-811118-5.00007-2",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Economic Characteristics of Air Traffic Management",
+      "authors": [
+        "Margaret Arblaster"
+      ],
+      "year": "2018",
+      "published_date": "2018",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/b978-0-12-811118-5.00006-0",
+      "url": "https://doi.org/10.1016/b978-0-12-811118-5.00006-0",
+      "paper_url": "https://doi.org/10.1016/b978-0-12-811118-5.00006-0",
+      "pdf_url": "https://doi.org/10.1016/b978-0-12-811118-5.00006-0",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "early warning landslide risk monitoring|4": [
+    {
+      "title": "The Value of Soil Wetness Measurements for Regional Landslide Early Warning Systems",
+      "authors": [
+        "Manfred Stähli",
+        "Adrian Wicki"
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_23",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_23",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Establishment of an Integrated Landslide Early Warning and Monitoring System in Populated Areas",
+      "authors": [
+        "Nikolaos Depountis",
+        "Nikolaos Sabatakakis",
+        "Katerina Kavoura",
+        "Konstantinos Nikolakopoulos",
+        "et al."
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_21",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_21",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "An Integrated WebGIS System for Shallow Landslide Hazard Early Warning",
+      "authors": [
+        "Nguyen Duc Ha",
+        "Le Quoc Hung",
+        "Takahiro Sayama",
+        "Kyoji Sassa",
+        "et al."
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_22",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_22",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Towards an Early Warning System for Instable Slopes in Georgia: The Large Tskneti-Akhaldaba-Landslide",
+      "authors": [
+        "Klaus-Peter Keilig",
+        "Markus Bauer",
+        "Peter Neumann",
+        "Kurosch Thuro"
+      ],
+      "year": "2021",
+      "published_date": "2021",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1007/978-3-030-60311-3_34",
+      "url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "paper_url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "pdf_url": "https://doi.org/10.1007/978-3-030-60311-3_34",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    }
+  ],
+  "drone surveillance|6": [
+    {
+      "title": "Surveillance Drone",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.23883/ijrter.2018.4053.yg0ux",
+      "url": "https://doi.org/10.23883/ijrter.2018.4053.yg0ux",
+      "paper_url": "https://doi.org/10.23883/ijrter.2018.4053.yg0ux",
+      "pdf_url": "https://doi.org/10.23883/ijrter.2018.4053.yg0ux",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Drone Surveillance",
+      "authors": [
+        "Jipson Joseph",
+        "Jobin Joseph",
+        "S. Srinivasan"
+      ],
+      "year": "2026",
+      "published_date": "2026",
+      "abstract": "The evolution of drones underlines the 20th-century scientific and technological progress. They evolved within the military context and remained within that circle for almost a century. The 21st century has increased the possibilities and opportunities of drones by incorporating Artificial Intelligence and machine learning technologies. Accordingly, drones are widely used in almost all fields o...",
+      "doi": "10.4018/979-8-3373-4277-1.ch019",
+      "url": "https://doi.org/10.4018/979-8-3373-4277-1.ch019",
+      "paper_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch019",
+      "pdf_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch019",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Untitled",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1117/12.2304531.5783307400001",
+      "url": "https://doi.org/10.1117/12.2304531.5783307400001",
+      "paper_url": "https://doi.org/10.1117/12.2304531.5783307400001",
+      "pdf_url": "https://doi.org/10.1117/12.2304531.5783307400001",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "component",
+      "hackathon_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain.",
+      "research_takeaway": "Provides rigorous theoretical foundations, mathematical formulation, and experimental methodologies relevant to the domain."
+    },
+    {
+      "title": "Decentralized Security for Smart Drone Surveillance System Architecture and Communication",
+      "authors": [
+        "Isha Malhotra",
+        "Kumari Anshu",
+        "Sushant Jha"
+      ],
+      "year": "2026",
+      "published_date": "2026",
+      "abstract": "The integration of decentralized security mechanisms into smart drone surveillance systems marks a transformative advancement in the field of unmanned aerial monitoring. Traditional centralized architectures are often vulnerable to single points of failure, data breaches and latency issues specifically in case of operation in hostile or remote environments. By leveraging blockchain technology, ...",
+      "doi": "10.4018/979-8-3373-4277-1.ch008",
+      "url": "https://doi.org/10.4018/979-8-3373-4277-1.ch008",
+      "paper_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch008",
+      "pdf_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch008",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees. Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees. Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Autonomous Surveillance Drone",
+      "authors": [
+        "Gaurav Shetty",
+        "Vraj Shah",
+        "Parva Juthani",
+        "Unik Lokhande"
+      ],
+      "year": "2022",
+      "published_date": "2022",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.21275/mr22428174616",
+      "url": "https://doi.org/10.21275/mr22428174616",
+      "paper_url": "https://doi.org/10.21275/mr22428174616",
+      "pdf_url": "https://doi.org/10.21275/mr22428174616",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Blockchain-Powered Drone Surveillance",
+      "authors": [
+        "B. Shaji",
+        "N. R. Ram Mohan",
+        "K. L. Nisha"
+      ],
+      "year": "2026",
+      "published_date": "2026",
+      "abstract": "Integrating blockchain and IoT with drone technology transforms surveillance by boosting security, transparency, and real-time monitoring. IoT-enabled drones access remote areas, while blockchain ensures tamper-proof data and secure communication. Features like autonomous navigation and smart payloads are enhanced through smart contracts and decentralized ledgers. Despite benefits, challenges s...",
+      "doi": "10.4018/979-8-3373-4277-1.ch011",
+      "url": "https://doi.org/10.4018/979-8-3373-4277-1.ch011",
+      "paper_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch011",
+      "pdf_url": "https://doi.org/10.4018/979-8-3373-4277-1.ch011",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Presents low-power telemetry, embedded edge inference, and latency-optimized deployment pipelines. Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees.",
+      "research_takeaway": "Presents low-power telemetry, embedded edge inference, and latency-optimized deployment pipelines. Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees."
+    }
   ]
 }

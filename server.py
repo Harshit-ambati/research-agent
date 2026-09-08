@@ -99,13 +99,13 @@ class LLMTestRequest(BaseModel):
 
 
 class ChatMessage(BaseModel):
-    role: Literal["user", "assistant"]
-    content: str = Field(min_length=1, max_length=4000)
+    role: Literal["user", "assistant"] = "user"
+    content: str = Field(default="", max_length=15000)
 
 class ChatRequest(BaseModel):
     ps_id: str = Field(min_length=1, max_length=120)
-    message: str = Field(min_length=1, max_length=4000)
-    history: List[ChatMessage] = Field(default_factory=list, max_length=20)
+    message: str = Field(min_length=1, max_length=15000)
+    history: List[ChatMessage] = Field(default_factory=list, max_length=50)
 
 class GeneralQueryRequest(BaseModel):
     query: str = Field(min_length=1, max_length=1000)
@@ -117,9 +117,9 @@ class ResearchRunRequest(BaseModel):
     max_datasets: int = Field(default=5, ge=1, le=10)
 
 class ResearchChatRequest(BaseModel):
-    message: str = Field(min_length=1, max_length=4000)
-    research_context: Dict[str, Any]
-    history: List[ChatMessage] = Field(default_factory=list, max_length=20)
+    message: str = Field(min_length=1, max_length=15000)
+    research_context: Dict[str, Any] = Field(default_factory=dict)
+    history: List[ChatMessage] = Field(default_factory=list, max_length=50)
 
 
 class WeatherRequest(BaseModel):
@@ -389,6 +389,19 @@ async def serve_index():
         return FileResponse(index_path)
     return {"message": "SIH Agent API v3.0 is running. Frontend in progress."}
 
+@app.get("/favicon.svg")
+async def serve_favicon():
+    fav = os.path.join(DIST_DIR, "favicon.svg")
+    if os.path.exists(fav):
+        return FileResponse(fav)
+    fav_src = os.path.join(FRONTEND_DIR, "public", "favicon.svg")
+    if os.path.exists(fav_src):
+        return FileResponse(fav_src)
+    return HTTPException(status_code=404)
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("server:app", host="127.0.0.1", port=8765, reload=True)
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", "8765"))
+    reload = os.getenv("RELOAD", "true").lower() in {"1", "true", "yes"}
+    uvicorn.run("server:app", host=host, port=port, reload=reload)

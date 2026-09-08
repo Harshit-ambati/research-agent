@@ -75,5 +75,38 @@
     "page_url": "https://en.wikipedia.org/wiki/Weather",
     "related_topics": [],
     "source": "Wikipedia Knowledge Base"
+  },
+  "drone projects": {
+    "query": "drone projects",
+    "title": "Dornier Flugzeugwerke",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Dornier Flugzeugwerke</span></span>",
+    "description": "German aircraft manufacturer",
+    "extract": "Dornier Flugzeugwerke was a German aircraft manufacturer founded in Friedrichshafen in 1914 by Claude Dornier. Over the course of its long lifespan, the company produced many designs for both the civil and military markets.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/DornierLogo.svg/330px-DornierLogo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Dornier_Flugzeugwerke",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "smart traffic management system": {
+    "query": "Smart Traffic Management System",
+    "title": "Smart traffic light",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Smart traffic light</span></span>",
+    "description": "Vehicle traffic control system",
+    "extract": "Smart traffic lights or Intelligent traffic lights are a vehicle traffic control system that combines traditional traffic lights with an array of sensors and artificial intelligence to intelligently route vehicle and pedestrian traffic. They can form part of a bigger intelligent transport system.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Smart_traffic_light.webp/330px-Smart_traffic_light.webp.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Smart_traffic_light",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "drone surveillance": {
+    "query": "drone surveillance",
+    "title": "Surveillance aircraft",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Surveillance aircraft</span></span>",
+    "description": "Aircraft designed for sustained observation",
+    "extract": "Surveillance aircraft or observation aircraft are aircraft used for aerial surveillance. They are primarily operated by military forces and government agencies in roles including intelligence gathering, maritime patrol, battlefield and airspace surveillance, observation, and law enforcement.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/EGUN_-_Boeing_RC-135V_Rivet_Joint_-_United_States_Air_Force_-_64-14846_-_Flickr_-_lynothehammer1978.jpg/330px-EGUN_-_Boeing_RC-135V_Rivet_Joint_-_United_States_Air_Force_-_64-14846_-_Flickr_-_lynothehammer1978.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Surveillance_aircraft",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
   }
 }

@@ -24,6 +24,8 @@ class SIHVectorStore:
         self.dataset_cache: Dict[str, Dict[str, Any]] = {}
         self._init_chroma()
         self._load_dataset_cache()
+        if self.collection and self.collection.count() == 0 and self.dataset_cache:
+            self.sync_dataset_to_vector_store()
 
     def _init_chroma(self):
         try:

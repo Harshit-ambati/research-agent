@@ -12,7 +12,8 @@ import CompareDrawer from './components/CompareDrawer';
 import Toast from './components/Toast';
 import RecentSearches from './components/RecentSearches';
 import WeatherCard from './components/WeatherCard';
-import { Sparkles, Target } from 'lucide-react';
+import { ClickSpark } from './components/reactbits';
+import { SpiderSense, SpiderTracer, SpiderWeb } from './components/SpiderIcons';
 import {
   fetchStats,
   fetchLLMStatus,
@@ -266,190 +267,190 @@ export default function App() {
 
   return (
     <div className="spider-shell relative min-h-screen text-slate-100 flex flex-col selection:bg-red-500 selection:text-white">
-
-      {/* Navigation Bar */}
-      <Navbar
-        stats={stats}
-        llmStatus={llmStatus}
-        onOpenLlmModal={() => setIsLlmModalOpen(true)}
-        onSync={handleSync}
-        isSyncing={isSyncing}
-        compareCount={compareList.length}
-        onOpenCompare={() => setIsCompareDrawerOpen(true)}
-      />
-
-      {/* Main Content Area */}
-      <main className="flex-1 relative z-10">
-        {/* Hero Search Section */}
-        <HeroSearch
-          query={query}
-          onQueryChange={setQuery}
-          onSearch={handleSearch}
-          onClear={handleClear}
-          isLoading={isLoading}
-        />
-        <RecentSearches
-          searches={recentSearches}
-          onSelect={(search) => {
-            setQuery(search);
-            handleSearch(search);
-          }}
-          onClear={() => setRecentSearches([])}
-        />
-
-        {weatherData && (
-          <WeatherCard
-            weather={weatherData}
-            isLoading={isLoading}
-            onSearchCity={(location) => requestWeather({ location })}
-            onUseLocation={handleUseCurrentLocation}
-            onClose={() => setWeatherData(null)}
-          />
-        )}
-
-        {/* Conversational AI Answer Card (if any out-of-domain conversational query) */}
-        {llmAnswer && (
-          <div className="max-w-4xl mx-auto px-4 mb-4">
-            <LlmAnswerCard
-              answerData={llmAnswer}
-              onClose={() => setLlmAnswer(null)}
-              onSelectSuggestion={handleSelectSuggestion}
-            />
-          </div>
-        )}
-
-        {/* View Mode Segmented Controls */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-2 mb-6">
-          <div className="flex items-center justify-between border-b border-slate-700 pb-3">
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setViewMode('research')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${
-                  viewMode === 'research'
-                    ? 'bg-red-600 text-white shadow-sm shadow-red-950/50'
-                    : 'text-slate-400 hover:text-white hover:bg-dark-800'
-                }`}
-              >
-                <Sparkles className="w-4 h-4" />
-                <span>360° Deep Research Dossier</span>
-                {researchData && (
-                  <span className="px-2 py-0.5 rounded-full bg-black/20 text-xs font-bold">
-                    {researchData.total_sources || 0} sources
-                  </span>
-                )}
-              </button>
-
-              <button
-                onClick={() => setViewMode('browse')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${
-                  viewMode === 'browse'
-                    ? 'bg-red-600 text-white shadow-sm shadow-red-950/50'
-                    : 'text-slate-400 hover:text-white hover:bg-dark-800'
-                }`}
-              >
-                <Target className="w-4 h-4" />
-                <span>Browse Applied Problems & SIH</span>
-                <span className="px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 text-xs font-bold border border-slate-700">
-                  {results.length}
-                </span>
-              </button>
-            </div>
-
-            <div className="hidden sm:flex items-center gap-2 text-xs text-slate-400">
-              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              <span>Web-linked intelligence active</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Loading Indicator */}
-        {isLoading && (
-          <div className="max-w-md mx-auto my-12 p-6 rounded-2xl bg-dark-900/80 border border-cyan-500/30 text-center space-y-3 backdrop-blur-xl shadow-2xl">
-            <div className="w-10 h-10 rounded-full border-2 border-cyan-500 border-t-transparent animate-spin mx-auto" />
-            <h3 className="text-white font-semibold text-sm">Conducting Deep Autonomous Research...</h3>
-            <p className="text-xs text-slate-400">
-              Querying Wikipedia, CrossRef DOIs, arXiv preprints, Google Patents, Hugging Face datasets & GitHub repositories.
-            </p>
-          </div>
-        )}
-
-        {/* View Mode 1: Full 360° Research Dossier */}
-        {!isLoading && viewMode === 'research' && researchData && (
-          <ResearchDossierView
-            researchData={researchData}
-            onOpenProblemStatement={(ps) => setSelectedTopic(ps)}
-            onToast={showToast}
-          />
-        )}
-
-        {/* View Mode 2: Applied Problem Statements Grid */}
-        {!isLoading && (viewMode === 'browse' || !researchData) && (
-          <>
-            {/* Live NLP Prompt Intent Extraction Card & Chain of Thought */}
-            {(nlpAnalysis || (chainOfThought && chainOfThought.length > 0)) && (
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
-                <NlpInsightCard nlpData={nlpAnalysis} chainOfThought={chainOfThought} />
-              </div>
-            )}
-
-            {/* Filters Toolbar */}
-            <FilterToolbar
-              filters={filters}
-              onFilterChange={handleFilterChange}
-              resultsCount={results.length}
-              stats={stats}
-            />
-
-            {/* Results Grid */}
-            <ResultsGrid
-              topics={results}
-              isLoading={isLoading}
-              onOpenDetail={(topic) => setSelectedTopic(topic)}
-              onToggleCompare={handleToggleCompare}
-              compareList={compareList}
-            />
-          </>
-        )}
-      </main>
-
-      {/* Detail Advisory Modal (for Hackathon Problem Statements) */}
-      {selectedTopic && (
-        <DetailModal
-          topic={selectedTopic}
-          onClose={() => setSelectedTopic(null)}
-          onToggleCompare={handleToggleCompare}
-          isCompared={compareList.some((t) => t.id === selectedTopic.id)}
+      {/* Electro-Web Click Sparks (React Bits) */}
+      <ClickSpark sparkColors={['#00f2fe', '#ef4444', '#38bdf8', '#ff3366', '#ffffff']}>
+        {/* Navigation Bar */}
+        <Navbar
+          stats={stats}
           llmStatus={llmStatus}
           onOpenLlmModal={() => setIsLlmModalOpen(true)}
+          onSync={handleSync}
+          isSyncing={isSyncing}
+          compareCount={compareList.length}
+          onOpenCompare={() => setIsCompareDrawerOpen(true)}
         />
-      )}
 
-      {/* LLM Provider Configuration Modal */}
-      <LlmSettingsModal
-        isOpen={isLlmModalOpen}
-        onClose={() => setIsLlmModalOpen(false)}
-        llmStatus={llmStatus}
-        onStatusUpdated={(newStatus) => {
-          setLlmStatus(newStatus);
-          showToast(`LLM updated: ${newStatus.provider || 'Ready'}!`, 'success');
-        }}
-      />
+        {/* Main Content Area */}
+        <main className="flex-1 relative z-10">
+          {/* Hero Search Section */}
+          <HeroSearch
+            query={query}
+            onQueryChange={setQuery}
+            onSearch={handleSearch}
+            onClear={handleClear}
+            isLoading={isLoading}
+          />
+          <RecentSearches
+            searches={recentSearches}
+            onSelect={(search) => {
+              setQuery(search);
+              handleSearch(search);
+            }}
+            onClear={() => setRecentSearches([])}
+          />
 
-      {/* Side-by-Side Comparison Drawer */}
-      <CompareDrawer
-        isOpen={isCompareDrawerOpen}
-        onClose={() => setIsCompareDrawerOpen(false)}
-        compareList={compareList}
-        onRemove={handleRemoveCompare}
-        onClearAll={handleClearCompareAll}
-        onOpenDetail={(topic) => {
-          setIsCompareDrawerOpen(false);
-          setSelectedTopic(topic);
-        }}
-      />
+          {weatherData && (
+            <WeatherCard
+              weather={weatherData}
+              isLoading={isLoading}
+              onSearchCity={(location) => requestWeather({ location })}
+              onUseLocation={handleUseCurrentLocation}
+              onClose={() => setWeatherData(null)}
+            />
+          )}
 
-      {/* Toast Notification */}
-      <Toast toast={toast} />
+          {/* Conversational AI Answer Card (if any out-of-domain conversational query) */}
+          {llmAnswer && (
+            <div className="max-w-4xl mx-auto px-4 mb-4">
+              <LlmAnswerCard
+                answerData={llmAnswer}
+                onClose={() => setLlmAnswer(null)}
+                onSelectSuggestion={handleSelectSuggestion}
+              />
+            </div>
+          )}
+
+          {/* View Mode Segmented Controls */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-2 mb-6">
+            <div className="flex items-center justify-between border-b border-red-950/80 pb-3">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setViewMode('research')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${viewMode === 'research'
+                      ? 'bg-red-600 text-white shadow-sm shadow-red-950/50 border border-red-500/40'
+                      : 'text-slate-400 hover:text-white hover:bg-dark-850 border border-transparent'
+                    }`}
+                >
+                  <SpiderSense className="w-4 h-4 text-cyan-300" />
+                  <span>360° Deep Research Dossier</span>
+                  {researchData && (
+                    <span className="px-2 py-0.5 rounded-full bg-white/20 text-white text-xs font-bold font-mono">
+                      {researchData.total_sources || 0} sources
+                    </span>
+                  )}
+                </button>
+
+                <button
+                  onClick={() => setViewMode('browse')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all cursor-pointer ${viewMode === 'browse'
+                      ? 'bg-red-600 text-white shadow-sm shadow-red-950/50 border border-red-500/40'
+                      : 'text-slate-400 hover:text-white hover:bg-dark-850 border border-transparent'
+                    }`}
+                >
+                  <SpiderTracer className="w-4 h-4 text-cyan-300" />
+                  <span>Browse Applied Problems & SIH</span>
+                  <span className="px-2 py-0.5 rounded-full bg-dark-950 text-slate-300 text-xs font-bold border border-white/10 font-mono">
+                    {results.length}
+                  </span>
+                </button>
+              </div>
+
+              <div className="hidden sm:flex items-center gap-2 text-xs text-slate-400">
+                <SpiderWeb className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+                <span>Web-linked intelligence active</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Loading Indicator */}
+          {isLoading && (
+            <div className="max-w-md mx-auto my-12 p-6 rounded-xl glass-panel border border-red-950/80 text-center space-y-3 backdrop-blur-xl shadow-2xl">
+              <div className="w-10 h-10 rounded-full border-2 border-red-500 border-t-transparent animate-spin mx-auto" />
+              <h3 className="text-white font-semibold text-sm">Conducting Deep Autonomous Research...</h3>
+              <p className="text-xs text-slate-400">
+                Querying Wikipedia, CrossRef DOIs, arXiv preprints, Google Patents, Hugging Face datasets & GitHub repositories.
+              </p>
+            </div>
+          )}
+
+          {/* View Mode 1: Full 360° Research Dossier */}
+          {!isLoading && viewMode === 'research' && researchData && (
+            <ResearchDossierView
+              researchData={researchData}
+              onOpenProblemStatement={(ps) => setSelectedTopic(ps)}
+              onToast={showToast}
+            />
+          )}
+
+          {/* View Mode 2: Applied Problem Statements Grid */}
+          {!isLoading && (viewMode === 'browse' || !researchData) && (
+            <>
+              {/* Live NLP Prompt Intent Extraction Card & Chain of Thought */}
+              {(nlpAnalysis || (chainOfThought && chainOfThought.length > 0)) && (
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+                  <NlpInsightCard nlpData={nlpAnalysis} chainOfThought={chainOfThought} />
+                </div>
+              )}
+
+              {/* Filters Toolbar */}
+              <FilterToolbar
+                filters={filters}
+                onFilterChange={handleFilterChange}
+                resultsCount={results.length}
+                stats={stats}
+              />
+
+              {/* Results Grid */}
+              <ResultsGrid
+                topics={results}
+                isLoading={isLoading}
+                onOpenDetail={(topic) => setSelectedTopic(topic)}
+                onToggleCompare={handleToggleCompare}
+                compareList={compareList}
+              />
+            </>
+          )}
+        </main>
+
+        {/* Detail Advisory Modal (for Hackathon Problem Statements) */}
+        {selectedTopic && (
+          <DetailModal
+            topic={selectedTopic}
+            onClose={() => setSelectedTopic(null)}
+            onToggleCompare={handleToggleCompare}
+            isCompared={compareList.some((t) => t.id === selectedTopic.id)}
+            llmStatus={llmStatus}
+            onOpenLlmModal={() => setIsLlmModalOpen(true)}
+          />
+        )}
+
+        {/* LLM Provider Configuration Modal */}
+        <LlmSettingsModal
+          isOpen={isLlmModalOpen}
+          onClose={() => setIsLlmModalOpen(false)}
+          llmStatus={llmStatus}
+          onStatusUpdated={(newStatus) => {
+            setLlmStatus(newStatus);
+            showToast(`LLM updated: ${newStatus.provider || 'Ready'}!`, 'success');
+          }}
+        />
+
+        {/* Side-by-Side Comparison Drawer */}
+        <CompareDrawer
+          isOpen={isCompareDrawerOpen}
+          onClose={() => setIsCompareDrawerOpen(false)}
+          compareList={compareList}
+          onRemove={handleRemoveCompare}
+          onClearAll={handleClearCompareAll}
+          onOpenDetail={(topic) => {
+            setIsCompareDrawerOpen(false);
+            setSelectedTopic(topic);
+          }}
+        />
+
+        {/* Toast Notification */}
+        <Toast toast={toast} />
+      </ClickSpark>
     </div>
   );
 }

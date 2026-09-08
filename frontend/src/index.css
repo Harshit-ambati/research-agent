@@ -41,7 +41,7 @@
   background: rgba(13, 11, 14, 0.84);
 }
 
-.spider-shell > *:not(.fixed):not([class*="fixed"]) {
+.spider-shell>*:not(.fixed):not([class*="fixed"]) {
   position: relative;
   z-index: 1;
 }
@@ -63,4 +63,41 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #e62429;
+}
+
+@keyframes shine-sweep {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes spider-sway {
+  0%, 100% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+}
+
+.animate-spider-sway {
+  transform-origin: top center;
+  animation: spider-sway 4.5s ease-in-out infinite;
+}
+
+@keyframes gwen-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-gwen-bob {
+  animation: gwen-bob 3.8s ease-in-out infinite;
 }

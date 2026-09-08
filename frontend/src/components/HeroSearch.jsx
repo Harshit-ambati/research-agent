@@ -1,5 +1,7 @@
 import React from 'react';
-import { Search, Sparkles, X, ArrowRight } from 'lucide-react';
+import { Search, X } from 'lucide-react';
+import { DecryptedText, Magnet } from './reactbits';
+import { SpiderSense, WebShooter } from './SpiderIcons';
 
 export default function HeroSearch({
   query,
@@ -16,9 +18,17 @@ export default function HeroSearch({
   return (
     <section className="relative pt-8 pb-7 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
       {/* Top Badge */}
-      <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-red-500/10 border border-red-500/30 text-[11px] font-semibold text-red-200 mb-4">
-        <Sparkles className="w-3.5 h-3.5 text-blue-300" />
-        <span>SIH research network connected</span>
+      <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md bg-red-500/10 border border-red-500/30 text-[11px] font-semibold text-red-200 mb-4 group cursor-pointer">
+        <SpiderSense className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+        <DecryptedText
+          text="SIH research network connected"
+          speed={35}
+          maxIterations={16}
+          revealDirection="start"
+          animateOn="both"
+          className="text-red-200 tracking-wide font-medium"
+          encryptedClassName="text-cyan-400 font-mono"
+        />
       </div>
 
       {/* Main Heading */}
@@ -57,14 +67,16 @@ export default function HeroSearch({
             </button>
           )}
 
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="flex items-center gap-2 px-5 py-3 rounded-md bg-red-600 text-white font-bold text-sm shadow-sm shadow-red-950/60 hover:bg-red-500 active:scale-[0.98] transition-all duration-200 cursor-pointer disabled:opacity-50"
-          >
-            <span>{isLoading ? 'Researching...' : 'Research'}</span>
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <Magnet padding={35} magnetStrength={0.25}>
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="flex items-center gap-2 px-5 py-3 rounded-md bg-red-600 text-white font-bold text-sm shadow-sm shadow-red-950/60 hover:bg-red-500 active:scale-[0.98] transition-all duration-200 cursor-pointer disabled:opacity-50"
+            >
+              <span>{isLoading ? 'Researching...' : 'Research'}</span>
+              <WebShooter className="w-4 h-4 text-white" />
+            </button>
+          </Magnet>
         </div>
       </form>
 
