@@ -1,0 +1,7 @@
+fastapi>=0.135,<0.136
+uvicorn[standard]>=0.41,<0.42
+chromadb>=1.5,<2.0
+numpy>=2.0,<3.0
+pydantic>=2.13,<3.0
+python-dotenv>=1.0,<2.0
+spacy>=3.8,<4.0

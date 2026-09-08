@@ -1,0 +1,11 @@
+{
+  "name": "sih-agent",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "server": "python server.py"
+  }
+}
