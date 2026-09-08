@@ -8,6 +8,7 @@ import json
 import re
 from typing import List, Dict, Any, Optional
 import numpy as np
+from sih_storage import atomic_write_json
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 VECTOR_STORE_DIR = os.path.join(DATA_DIR, "vector_store")
@@ -116,8 +117,7 @@ class SIHVectorStore:
             self.dataset_cache[s["id"]] = s
 
         # Save to master json
-        with open(MASTER_DATASET_PATH, "w", encoding="utf-8") as f:
-            json.dump(list(self.dataset_cache.values()), f, indent=2, ensure_ascii=False)
+        atomic_write_json(MASTER_DATASET_PATH, list(self.dataset_cache.values()))
 
         if not self.collection:
             return len(statements)
