@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIH Topic Discovery & Advisory Agent | Vector DB • NLP • LLM • Research & Patents</title>
+  <meta name="description" content="Discover Smart India Hackathon problem statements with AI-powered semantic search, LLM advisory, research papers, and Google Patents analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="glow-sphere glow-1"></div>
+  <div class="glow-sphere glow-2"></div>
+  <div class="glow-sphere glow-3"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">SIH AGENT<span>.ai</span></h1>
+          <p class="brand-subtitle">Smart India Hackathon Discovery & Advisory Intelligence</p>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <div class="db-pill">
+          <span class="pulse-dot"></span>
+          <span id="vectorStoreStatus">ChromaDB • 430 Indexed</span>
+        </div>
+        <!-- LLM Status Pill -->
+        <button id="llmSettingsBtn" class="llm-status-pill" title="Configure LLM Provider">
+          <span id="llmStatusIcon">🤖</span>
+          <span id="llmStatusLabel">LLM: Setup Key</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <button id="syncBtn" class="btn-secondary" title="Sync newly proposed problem statements from SIH portal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sync-icon">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+          </svg>
+          <span>Sync SIH Data</span>
+        </button>
+        <button id="viewCompareBtn" class="btn-accent" style="display: none;">
+          <span>Compare</span> <span id="compareCountBadge" class="badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+    <!-- Hero Search Section -->
+    <section class="hero-section">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="m4.93 4.93 4.24 4.24"></path>
+          <path d="m14.83 9.17 4.24-4.24"></path>
+          <path d="m14.83 14.83 4.24 4.24"></path>
+          <path d="m9.17 14.83-4.24 4.24"></path>
+        </svg>
+        Vector Database • NLP Intent Extraction • LLM Advisory • arXiv Research • Google Patents
+      </div>
+      <h2 class="hero-heading">Explore SIH Problem Statements<br>Powered by <span class="gradient-text">AI & LLM Intelligence</span></h2>
+      <p class="hero-desc">Enter any keyword, concept, or project vision — or ask a question. Our NLP + LLM Agent analyzes your prompt, runs vector similarity across historical & live SIH editions, and surfaces winning tech stacks, research papers, and patent prior art.</p>
+
+      <!-- Search Box -->
+      <div class="search-wrapper">
+        <div class="search-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search topics or ask a question (e.g. 'drone pest detection', 'how to prepare for SIH?')..." autocomplete="off">
+          <button id="clearSearchBtn" class="clear-btn" style="display: none;">✕</button>
+          <button id="searchBtn" class="search-btn">
+            <span>Discover Topics</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Quick Idea Pills -->
+        <div class="prompt-pills">
+          <span class="pill-label">Try asking:</span>
+          <button class="pill" data-query="drone crop disease detection using edge AI">🌾 Drone Crop Disease</button>
+          <button class="pill" data-query="smart traffic signal computer vision and ambulance priority">🚦 Traffic Ambulance Priority</button>
+          <button class="pill" data-query="blockchain land registry for rural villages">📑 Blockchain Land Registry</button>
+          <button class="pill" data-query="IoT river water quality monitoring and industrial effluent">🌊 River Pollution IoT</button>
+          <button class="pill" data-query="how do I prepare for Smart India Hackathon?">💡 How to prepare for SIH?</button>
+          <button class="pill" data-query="what are the judging criteria for SIH?">📋 SIH Judging Criteria</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLM Answer Banner (shown for conversational queries) -->
+    <section id="llmAnswerSection" class="llm-answer-card" style="display: none;">
+      <div class="llm-answer-header">
+        <div class="llm-answer-title">
+          <span class="llm-answer-icon">🤖</span>
+          <strong>AI Mentor Answer</strong>
+          <span id="llmAnswerBadge" class="llm-badge-active">LLM Active</span>
+        </div>
+        <button id="closeLlmAnswerBtn" class="btn-close-sm">✕</button>
+      </div>
+      <div id="llmAnswerContent" class="llm-answer-content"></div>
+      <div id="llmSuggestedSearches" class="llm-suggested-searches" style="display:none;">
+        <span class="pill-label">Suggested searches:</span>
+        <div id="llmSuggestionPills" class="prompt-pills" style="margin-top: 0;"></div>
+      </div>
+    </section>
+
+    <!-- Live NLP Insight Bar -->
+    <section id="nlpInsightSection" class="nlp-insight-card" style="display: none;">
+      <div class="nlp-header">
+        <div class="nlp-title">
+          <span class="nlp-icon">🧠</span>
+          <strong>NLP Prompt Understanding</strong>
+        </div>
+        <div id="inferredCategoryBadge" class="cat-pill">Software</div>
+      </div>
+      <p id="nlpSummaryText" class="nlp-summary">Analyzing prompt intent...</p>
+      
+      <div class="nlp-tags-row">
+        <div class="nlp-subgroup">
+          <span class="subgroup-label">Identified Domain:</span>
+          <span id="nlpDomainBadge" class="domain-tag">Agriculture</span>
+        </div>
+        <div class="nlp-subgroup">
+          <span class="subgroup-label">Extracted Entities:</span>
+          <div id="nlpEntitiesList" class="tag-chips"></div>
+        </div>
+        <div class="nlp-subgroup">
+          <span class="subgroup-label">Detected Tech:</span>
+          <div id="nlpTechList" class="tag-chips"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter & Controls Toolbar -->
+    <section class="filter-toolbar">
+      <!-- Year Pills -->
+      <div class="filter-group">
+        <span class="filter-title">Edition:</span>
+        <div class="filter-pills" id="yearFilterGroup">
+          <button class="f-pill active" data-year="all">All Editions</button>
+          <button class="f-pill" data-year="2025">2025/26</button>
+          <button class="f-pill" data-year="2024">2024</button>
+          <button class="f-pill" data-year="2023">2023</button>
+          <button class="f-pill" data-year="2022">2022</button>
+          <button class="f-pill" data-year="2020">2020</button>
+        </div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-group">
+        <span class="filter-title">Category:</span>
+        <div class="filter-pills" id="categoryFilterGroup">
+          <button class="f-pill active" data-cat="all">All</button>
+          <button class="f-pill" data-cat="Software">Software</button>
+          <button class="f-pill" data-cat="Hardware">Hardware</button>
+        </div>
+      </div>
+
+      <!-- Domain Dropdown -->
+      <div class="filter-group domain-select-group">
+        <label for="domainSelect" class="filter-title">Domain Bucket:</label>
+        <select id="domainSelect" class="select-dropdown">
+          <option value="all">All Domains (Master Archive)</option>
+          <option value="Smart Automation">Smart Automation</option>
+          <option value="Disaster Management">Disaster Management</option>
+          <option value="Agriculture, FoodTech & Rural Development">Agriculture & Rural Dev</option>
+          <option value="MedTech / BioTech / HealthTech">MedTech & Healthcare</option>
+          <option value="Blockchain & Cybersecurity">Blockchain & Cyber Security</option>
+          <option value="Clean & Green Technology">Clean & Green Technology</option>
+          <option value="Transportation & Logistics">Transportation & Logistics</option>
+          <option value="Smart Education">Smart Education</option>
+          <option value="Robotics and Drones">Robotics & Drones</option>
+          <option value="Space Technology">Space Technology</option>
+          <option value="Smart Innovation">Smart Innovation</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Results Status Bar -->
+    <div class="results-meta">
+      <div class="results-count-text">
+        Showing <strong id="resultsCount">0</strong> problem statements
+        <span id="activeFilterNote" class="filter-note"></span>
+      </div>
+      <div class="results-sort">
+        <span>Ranked by Semantic Vector Relevance %</span>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <section id="resultsGrid" class="results-grid">
+      <!-- Loading State -->
+      <div class="loading-container">
+        <div class="spinner"></div>
+        <p>Querying persistent Vector Database...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Detail & Advisory Modal -->
+  <div id="detailModal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-badges">
+            <span id="modalPsId" class="badge-ps">SIH2023_1204</span>
+            <span id="modalYear" class="badge-year">2023</span>
+            <span id="modalCategory" class="badge-cat">Software</span>
+            <span id="modalDomain" class="badge-domain">Agriculture</span>
+            <span id="modalLlmBadge" class="llm-badge-active" style="display:none;">✨ LLM Powered</span>
+          </div>
+          <h2 id="modalTitle" class="modal-title">Problem Statement Title</h2>
+          <p id="modalOrg" class="modal-org">Ministry of Agriculture</p>
+        </div>
+        <button id="closeModalBtn" class="modal-close">&times;</button>
+      </div>
+
+      <!-- Modal Tabs -->
+      <div class="modal-tabs">
+        <button class="m-tab active" data-tab="tabOverview">📌 Statement Overview</button>
+        <button class="m-tab" data-tab="tabAdvisory">💡 AI Hackathon Strategy</button>
+        <button class="m-tab" data-tab="tabResearch">📚 Research Papers</button>
+        <button class="m-tab" data-tab="tabPatents">🔍 Google Patents</button>
+        <button class="m-tab" data-tab="tabPitch">📊 4-Slide Pitch Deck</button>
+        <button class="m-tab" data-tab="tabMentor" id="mentorTabBtn">🤖 AI Mentor Chat</button>
+      </div>
+
+      <!-- Modal Content Body -->
+      <div class="modal-body">
+        <!-- Tab 1: Overview -->
+        <div id="tabOverview" class="tab-pane active">
+          <div class="detail-section">
+            <h3>Detailed Problem Statement Description</h3>
+            <p id="modalDesc" class="desc-text"></p>
+          </div>
+          <div class="detail-section">
+            <h3>Technology Keywords & Tags</h3>
+            <div id="modalTechTags" class="tag-chips"></div>
+          </div>
+          <div class="detail-section">
+            <h3>Reference Portal & Guidelines</h3>
+            <p>Official SIH Portal Source: <a id="modalSourceLink" href="https://sih.gov.in" target="_blank" rel="noopener">sih.gov.in official statement portal ↗</a></p>
+          </div>
+        </div>
+
+        <!-- Tab 2: AI Strategy & Advisory -->
+        <div id="tabAdvisory" class="tab-pane">
+          <div id="advisoryLoadingMsg" class="loading-mini" style="display:none;">✨ Generating LLM-powered advisory...</div>
+          <div class="advisory-box">
+            <div class="advisory-card">
+              <div class="ad-icon">🎯</div>
+              <div>
+                <h4>Why This Matches Your Idea</h4>
+                <p id="advWhyMatched"></p>
+              </div>
+            </div>
+            <div class="advisory-card highlight">
+              <div class="ad-icon">🏆</div>
+              <div>
+                <h4>Judge Winning Edge (Novelty Factor)</h4>
+                <p id="advWinningEdge"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3>Recommended Architecture & Technology Stack</h3>
+            <div class="stack-grid">
+              <div class="stack-card">
+                <span class="stack-lbl">AI / ML Engine</span>
+                <p id="advStackAi"></p>
+              </div>
+              <div class="stack-card">
+                <span class="stack-lbl">Backend & API</span>
+                <p id="advStackBackend"></p>
+              </div>
+              <div class="stack-card">
+                <span class="stack-lbl">Frontend UI / Mobile</span>
+                <p id="advStackFrontend"></p>
+              </div>
+              <div class="stack-card">
+                <span class="stack-lbl">Hardware / IoT</span>
+                <p id="advStackHardware"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3>36-Hour Hackathon MVP Roadmap</h3>
+            <div id="advRoadmap" class="roadmap-timeline"></div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Research Papers -->
+        <div id="tabResearch" class="tab-pane">
+          <div class="tab-intro">
+            <p>Peer-reviewed academic publications from <strong>CrossRef</strong> (DOI-indexed journals) and <strong>arXiv</strong> relevant to this problem statement:</p>
+          </div>
+          <div id="papersList" class="papers-grid">
+            <div class="loading-mini">Fetching academic literature...</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Google Patents -->
+        <div id="tabPatents" class="tab-pane">
+          <div class="tab-intro">
+            <p>Existing patents indexed on <strong>Google Patents</strong>, prior-art analysis, and unencumbered novelty strategies:</p>
+          </div>
+          <div id="patentsList" class="patents-grid">
+            <div class="loading-mini">Querying Google Patents index...</div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Pitch Deck Blueprint -->
+        <div id="tabPitch" class="tab-pane">
+          <div class="pitch-actions-bar">
+            <p>SIH Evaluation 4-Slide Presentation Structure:</p>
+            <button id="copyPitchBtn" class="btn-secondary btn-sm">📋 Copy Markdown Pitch</button>
+          </div>
+          <div id="pitchDeckSlides" class="slides-container"></div>
+        </div>
+
+        <!-- Tab 6: AI Mentor Chat -->
+        <div id="tabMentor" class="tab-pane">
+          <div class="mentor-header-info">
+            <div class="mentor-avatar">🤖</div>
+            <div>
+              <strong>SIH AI Hackathon Mentor</strong>
+              <p id="mentorLlmInfo" class="mentor-llm-info">Ask anything about this problem statement — jury defense, BOM estimation, tech architecture, or strategy tips.</p>
+            </div>
+          </div>
+
+          <!-- Quick Prompts -->
+          <div class="mentor-quick-prompts">
+            <button class="mentor-chip" data-question="What are the top 3 questions the jury is likely to ask us?">🎤 Jury Questions</button>
+            <button class="mentor-chip" data-question="What is a realistic hardware bill of materials for a minimal prototype?">🔧 Bill of Materials</button>
+            <button class="mentor-chip" data-question="How can we demonstrate offline capability during the 36h demo?">📡 Offline Demo Strategy</button>
+            <button class="mentor-chip" data-question="What are the biggest technical risks and how do we mitigate them?">⚠️ Technical Risks</button>
+            <button class="mentor-chip" data-question="Suggest 3 unique datasets we can use for training or validation.">📊 Datasets to Use</button>
+          </div>
+
+          <!-- Chat Window -->
+          <div id="mentorChatWindow" class="mentor-chat-window">
+            <div class="mentor-msg assistant">
+              <div class="mentor-bubble">
+                👋 Hi! I'm your SIH AI Mentor. Ask me anything about this problem statement — from technical architecture to jury preparation and 36-hour sprint planning. Use the quick prompts above or type your own question below.
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat Input -->
+          <div class="mentor-input-row">
+            <input type="text" id="mentorInput" class="mentor-input" placeholder="Ask about strategy, tech stack, jury defense, BOM..." autocomplete="off">
+            <button id="mentorSendBtn" class="mentor-send-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="modalCompareToggleBtn" class="btn-secondary">+ Add to Comparison</button>
+        <button id="modalCloseBottomBtn" class="btn-accent">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LLM Settings Modal -->
+  <div id="llmModal" class="modal-overlay" style="display: none;">
+    <div class="modal-container llm-settings-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h2 class="modal-title">🤖 LLM Configuration</h2>
+          <p class="modal-org">Configure your preferred AI language model provider</p>
+        </div>
+        <button id="closeLlmModalBtn" class="modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body" style="overflow-y: auto;">
+        <!-- Provider Selection -->
+        <div class="llm-provider-grid">
+          <div class="llm-provider-card" data-provider="gemini" id="provCard-gemini">
+            <div class="llm-prov-icon">✨</div>
+            <div class="llm-prov-info">
+              <strong>Google Gemini</strong>
+              <small>Free tier • Fast • gemini-1.5-flash</small>
+            </div>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" class="llm-get-key-link">Get Free Key ↗</a>
+          </div>
+          <div class="llm-provider-card" data-provider="groq" id="provCard-groq">
+            <div class="llm-prov-icon">⚡</div>
+            <div class="llm-prov-info">
+              <strong>Groq</strong>
+              <small>Ultra-fast • Free tier • Llama 3.3 70B</small>
+            </div>
+            <a href="https://console.groq.com" target="_blank" class="llm-get-key-link">Get Free Key ↗</a>
+          </div>
+          <div class="llm-provider-card" data-provider="openai" id="provCard-openai">
+            <div class="llm-prov-icon">🧠</div>
+            <div class="llm-prov-info">
+              <strong>OpenAI</strong>
+              <small>GPT-4o / GPT-4o-mini • Paid</small>
+            </div>
+            <a href="https://platform.openai.com/api-keys" target="_blank" class="llm-get-key-link">Get Key ↗</a>
+          </div>
+          <div class="llm-provider-card" data-provider="ollama" id="provCard-ollama">
+            <div class="llm-prov-icon">🏠</div>
+            <div class="llm-prov-info">
+              <strong>Local Ollama</strong>
+              <small>100% Offline • No API Key • Free</small>
+            </div>
+            <a href="https://ollama.ai" target="_blank" class="llm-get-key-link">Install ↗</a>
+          </div>
+        </div>
+
+        <!-- Selected Provider Config -->
+        <div class="llm-config-form" id="llmConfigForm" style="display: none;">
+          <div class="llm-form-row">
+            <label>Provider</label>
+            <span id="selectedProviderLabel" class="llm-selected-label">—</span>
+          </div>
+          <div class="llm-form-row" id="llmApiKeyRow">
+            <label for="llmApiKeyInput">API Key</label>
+            <input type="password" id="llmApiKeyInput" class="llm-input" placeholder="Paste your API key here..." autocomplete="off">
+          </div>
+          <div class="llm-form-row">
+            <label for="llmModelSelect">Model</label>
+            <select id="llmModelSelect" class="select-dropdown llm-input"></select>
+          </div>
+          <div class="llm-form-actions">
+            <button id="llmTestBtn" class="btn-secondary">🔌 Test Connection</button>
+            <button id="llmSaveBtn" class="btn-accent">💾 Save & Activate</button>
+          </div>
+          <div id="llmTestResult" class="llm-test-result" style="display: none;"></div>
+        </div>
+
+        <!-- Current Status -->
+        <div class="llm-current-status">
+          <div class="llm-status-row">
+            <span>Current Status</span>
+            <span id="llmCurrentStatusBadge" class="badge-cat">Inactive</span>
+          </div>
+          <div class="llm-status-row">
+            <span>Active Provider</span>
+            <span id="llmCurrentProvider" class="mono-text">—</span>
+          </div>
+          <div class="llm-status-row">
+            <span>Active Model</span>
+            <span id="llmCurrentModel" class="mono-text">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison Drawer -->
+  <div id="compareDrawer" class="compare-drawer" style="display: none;">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <span>⚖️ Side-by-Side Topic Comparison</span>
+        <span id="drawerCount" class="badge">0/3</span>
+      </div>
+      <div class="drawer-actions">
+        <button id="clearCompareBtn" class="btn-text">Clear All</button>
+        <button id="closeDrawerBtn" class="btn-close-sm">&times;</button>
+      </div>
+    </div>
+    <div id="compareCardsContainer" class="compare-grid"></div>
+  </div>
+
+  <!-- Sync Notification Toast -->
+  <div id="syncToast" class="toast" style="display: none;">
+    <span class="toast-icon">🔄</span>
+    <span id="syncToastMsg">Syncing with SIH portal...</span>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
