@@ -1,0 +1,79 @@
+{
+  "quantum computing": {
+    "query": "Quantum computing",
+    "title": "Quantum computing",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Quantum computing</span></span>",
+    "description": "Computer hardware technology that uses quantum mechanics",
+    "extract": "A quantum computer is a computer that represents and processes information using quantum states. Quantum computations exploit phenomena such as superposition, interference, and entanglement. Quantum computers have the potential to complete some calculations exponentially faster than classical computers. For example, a large-scale quantum computer could break widely used encryption schemes and aid physicists in performing physical simulations. However, current hardware implementations of quantum computation are largely experimental and suitable for only certain specialized tasks.",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/IBM_Quantum_Computer_Demo_at_ITUWTSA_2024%2C_Delhi_2.jpg/330px-IBM_Quantum_Computer_Demo_at_ITUWTSA_2024%2C_Delhi_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Quantum_computing",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "quantum error correction": {
+    "query": "Quantum Error Correction",
+    "title": "Quantum error correction",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Quantum error correction</span></span>",
+    "description": "Process in quantum computing",
+    "extract": "Quantum error correction (QEC) comprises a set of techniques used in quantum memory and quantum computing to protect quantum information from errors arising from decoherence and other sources of quantum noise. QEC schemes that employ codewords stabilized by a set of commuting operators are known as stabilizer codes, and the corresponding codewords are referred to as quantum error-correcting codes (QECCs).",
+    "thumbnail": "",
+    "page_url": "https://en.wikipedia.org/wiki/Quantum_error_correction",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "liquid neural networks": {
+    "query": "Liquid Neural Networks",
+    "title": "Liquid AI",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Liquid AI</span></span>",
+    "description": "An American artificial intelligence company",
+    "extract": "Liquid AI is an American artificial intelligence company, an MIT spin-off, that develops liquid foundation models running directly on devices without a cloud connection. It was founded in 2023 by Ramin Hasani, Mathias Lechner, and Alexander Amini, together with the MIT computer scientist Daniela Rus.",
+    "thumbnail": "",
+    "page_url": "https://en.wikipedia.org/wiki/Liquid_AI",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "quantum error correction and fault tolerant qubits": {
+    "query": "Quantum Error Correction and Fault Tolerant Qubits",
+    "title": "Quantum error correction",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Quantum error correction</span></span>",
+    "description": "Process in quantum computing",
+    "extract": "Quantum error correction (QEC) comprises a set of techniques used in quantum memory and quantum computing to protect quantum information from errors arising from decoherence and other sources of quantum noise. QEC schemes that employ codewords stabilized by a set of commuting operators are known as stabilizer codes, and the corresponding codewords are referred to as quantum error-correcting codes (QECCs).",
+    "thumbnail": "",
+    "page_url": "https://en.wikipedia.org/wiki/Quantum_error_correction",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "drone related project topics": {
+    "query": "drone related project topics",
+    "title": "Drone warfare",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Drone warfare</span></span>",
+    "description": "Attack by one or more unmanned combat aerial vehicles",
+    "extract": "Drone warfare is the use of military robots and unmanned systems in warfare. The unmanned systems may be remote controlled by a pilot or have varying levels of autonomy during their mission. Types of unmanned systems and platforms include unmanned combat aerial vehicles (UCAV) or weaponized commercial unmanned aerial vehicles (UAV), unmanned surface vehicles (USV) or unmanned underwater vehicles (UUV), and unmanned ground vehicles (UGV). SUAVs and MAVs are man-portable UAVs and can be deployed for low-altitude, short-range support operations. Autonomous drones such as autonomous aircraft and LAWS utilize artificial intelligence or pre-programmed algorithms. As of 2019, the following nations have been identified as having operational UCAVs: China, France, Greece, India, Iran, Iraq, Israel, Italy, Pakistan, Poland, Russia, South Korea, Turkey, the United States, the United Kingdom, and Ukraine.",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/SBU_Alpha.jpg/330px-SBU_Alpha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Drone_warfare",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "how is the weather today?": {
+    "query": "how is the weather today?",
+    "title": "Weather",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Weather</span></span>",
+    "description": "Short-term state of the atmosphere",
+    "extract": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth.",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg/330px-Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Weather",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  },
+  "how is the weather today": {
+    "query": "how is the weather today",
+    "title": "Weather",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Weather</span></span>",
+    "description": "Short-term state of the atmosphere",
+    "extract": "Weather is the state of the Earth's atmosphere at a specific place and time, typically described in terms of temperature, humidity, cloud cover, and stability. On Earth, most weather phenomena occur in the lowest layer of the planet's atmosphere, the troposphere, just below the stratosphere. Weather refers to day-to-day temperature, precipitation, and other atmospheric conditions, whereas climate is the term for the averaging of atmospheric conditions over longer periods of time. When used without qualification, \"weather\" is generally understood to mean the weather of Earth.",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg/330px-Port_and_lighthouse_overnight_storm_with_lightning_in_Port-la-Nouvelle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Weather",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
+  }
+}
