@@ -9,6 +9,7 @@ import urllib.request
 import re
 from datetime import datetime
 from typing import Dict, Any, List
+from sih_storage import atomic_write_json
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 MASTER_DATASET_PATH = os.path.join(DATA_DIR, "sih_master_dataset.json")
@@ -25,8 +26,7 @@ class SIHUpdater:
         return []
 
     def _save_master(self, data: List[Dict[str, Any]]):
-        with open(MASTER_DATASET_PATH, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+        atomic_write_json(MASTER_DATASET_PATH, data)
 
     def _log_sync(self, status: str, added_count: int, total_count: int, message: str, new_titles: List[str]):
         log_entry = {
@@ -47,8 +47,7 @@ class SIHUpdater:
         history.insert(0, log_entry)
         # Keep last 50 logs
         history = history[:50]
-        with open(SYNC_LOG_PATH, "w", encoding="utf-8") as f:
-            json.dump(history, f, indent=2, ensure_ascii=False)
+        atomic_write_json(SYNC_LOG_PATH, history)
 
     def get_sync_status(self) -> Dict[str, Any]:
         """Returns the latest sync metadata and history."""
