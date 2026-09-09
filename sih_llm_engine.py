@@ -15,6 +15,7 @@ Provides:
 """
 
 import os
+import ssl
 import json
 import time
 import urllib.request
@@ -22,6 +23,17 @@ import urllib.parse
 import urllib.error
 from typing import Dict, Any, List, Optional, Tuple
 from pathlib import Path
+
+def _safe_urlopen(req, timeout=30):
+    """Executes HTTP request with automatic SSL context fallback if self-signed or enterprise proxy certificates are encountered."""
+    try:
+        return urllib.request.urlopen(req, timeout=timeout)
+    except urllib.error.URLError as e:
+        err_str = str(e)
+        if "CERTIFICATE_VERIFY_FAILED" in err_str or "certificate verify failed" in err_str.lower():
+            ctx = ssl._create_unverified_context()
+            return urllib.request.urlopen(req, context=ctx, timeout=timeout)
+        raise
 
 # .env loader (uses python-dotenv if available, else manual parse)
 def reload_env():
@@ -320,7 +332,7 @@ class LLMEngine:
             },
             method="POST"
         )
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with _safe_urlopen(req, timeout=timeout) as resp:
             data = json.loads(resp.read().decode("utf-8"))
 
         candidates = data.get("candidates", [])
@@ -359,7 +371,7 @@ class LLMEngine:
             },
             method="POST"
         )
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with _safe_urlopen(req, timeout=timeout) as resp:
             data = json.loads(resp.read().decode("utf-8"))
         return data["choices"][0]["message"]["content"]
 
