@@ -15,7 +15,6 @@ dist/
 *.local
 
 # Chroma cache / temp
-data/vector_store/
 .cache/
 *.log
 

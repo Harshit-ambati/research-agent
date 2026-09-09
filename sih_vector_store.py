@@ -24,8 +24,12 @@ class SIHVectorStore:
         self.dataset_cache: Dict[str, Dict[str, Any]] = {}
         self._init_chroma()
         self._load_dataset_cache()
-        if self.collection and self.collection.count() == 0 and self.dataset_cache:
-            self.sync_dataset_to_vector_store()
+        auto_sync = os.getenv("SIH_AUTO_SYNC_VECTORS", "true").lower() in {"1", "true", "yes"}
+        if auto_sync and self.collection and self.collection.count() == 0 and self.dataset_cache:
+            try:
+                self.sync_dataset_to_vector_store()
+            except Exception as e:
+                print(f"Warning during initial vector store sync: {e}. Fallback keyword search remains active.")
 
     def _init_chroma(self):
         try:
@@ -93,8 +97,9 @@ class SIHVectorStore:
                 "complexity": str(item.get("complexity", "Medium"))
             })
 
-        # Batch insert
-        batch_size = 64
+        # Batch insert with conservative memory footprint
+        import gc
+        batch_size = int(os.getenv("VECTOR_BATCH_SIZE", "16"))
         for i in range(0, len(ids), batch_size):
             end = min(i + batch_size, len(ids))
             self.collection.upsert(
@@ -102,6 +107,7 @@ class SIHVectorStore:
                 documents=documents[i:end],
                 metadatas=metadatas[i:end]
             )
+            gc.collect()
 
         new_count = self.collection.count()
         print(f"Indexing complete. Total vector store records: {new_count}")

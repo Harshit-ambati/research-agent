@@ -8,5 +8,15 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      - key: HOST
+        value: 0.0.0.0
+      - key: RELOAD
+        value: "false"
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: MALLOC_TRIM_THRESHOLD_
+        value: "100000"
       - key: SIH_ALLOWED_ORIGINS
         value: http://localhost:5173,https://*.vercel.app

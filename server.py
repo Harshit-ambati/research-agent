@@ -402,7 +402,11 @@ async def serve_favicon():
 
 if __name__ == "__main__":
     import uvicorn
-    host = os.getenv("HOST", "127.0.0.1")
+    # Default to 0.0.0.0 for Render/production, 127.0.0.1 for local dev
+    default_host = "0.0.0.0" if (os.getenv("RENDER") or os.getenv("PORT")) else "127.0.0.1"
+    host = os.getenv("HOST", default_host)
     port = int(os.getenv("PORT", "8765"))
-    reload = os.getenv("RELOAD", "true").lower() in {"1", "true", "yes"}
+    # Disable reload by default in production/Render to prevent duplicate process RAM spikes
+    default_reload = "false" if (os.getenv("RENDER") or os.getenv("PORT")) else "true"
+    reload = os.getenv("RELOAD", default_reload).lower() in {"1", "true", "yes"}
     uvicorn.run("server:app", host=host, port=port, reload=reload)
