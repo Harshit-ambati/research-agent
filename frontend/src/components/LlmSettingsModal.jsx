@@ -7,8 +7,8 @@ const DEFAULT_PROVIDERS = [
   {
     id: 'gemini',
     label: 'Google Gemini',
-    models: ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.0-flash-exp'],
-    default_model: 'gemini-1.5-flash',
+    models: ['gemini-2.5-flash', 'gemini-flash-latest', 'gemini-2.5-pro', 'gemini-2.5-flash-lite'],
+    default_model: 'gemini-2.5-flash',
     needs_key: true,
     key_url: 'https://aistudio.google.com/app/apikey',
     key_hint: 'Get free key at Google AI Studio',

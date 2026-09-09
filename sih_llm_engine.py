@@ -44,8 +44,8 @@ reload_env()
 PROVIDERS = {
     "gemini": {
         "label": "Google Gemini",
-        "default_model": "gemini-1.5-flash",
-        "models": ["gemini-1.5-flash", "gemini-2.0-flash", "gemini-1.5-pro"],
+        "default_model": "gemini-2.5-flash",
+        "models": ["gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-pro", "gemini-2.5-flash-lite"],
         "key_env": "GEMINI_API_KEY",
         "base_url": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}",
         "needs_key": True,
@@ -215,19 +215,30 @@ class LLMEngine:
             return {"success": False, "error": f"Unknown provider: {provider}"}
 
         prov = PROVIDERS[provider]
-        if prov["needs_key"] and not api_key:
-            return {"success": False, "error": "API key required for this provider."}
+        clean_key = (api_key or "").strip()
+        if not clean_key and prov.get("key_env"):
+            clean_key = (os.environ.get(prov["key_env"], "") or (self._api_key if self._provider == provider else "")).strip()
 
+        if prov["needs_key"] and not clean_key:
+            return {"success": False, "error": f"API key required for {prov['label']}. Please paste your key in the field above."}
+
+        self._last_error = ""
         t0 = time.time()
         try:
-            msg = self._call_llm("Say: OK", provider=provider, api_key=api_key,
-                                  model=model or prov["default_model"], max_tokens=5)
+            msg = self._call_llm("Say: OK", provider=provider, api_key=clean_key,
+                                  model=model or prov["default_model"], max_tokens=30)
             latency_ms = int((time.time() - t0) * 1000)
             if msg:
-                return {"success": True, "response": msg.strip(), "latency_ms": latency_ms}
-            return {"success": False, "error": self._last_error or "Empty response from provider."}
+                return {
+                    "success": True,
+                    "response": msg.strip(),
+                    "latency_ms": latency_ms,
+                    "message": f"Connected successfully to {prov['label']} ({latency_ms}ms)!"
+                }
+            err = self._last_error or "Empty response from provider."
+            return {"success": False, "error": err, "message": err}
         except Exception as e:
-            return {"success": False, "error": str(e)}
+            return {"success": False, "error": str(e), "message": str(e)}
 
     # ─── Low-level HTTP caller ────────────────────────────────────────────────
 
@@ -275,7 +286,9 @@ class LLMEngine:
             return None
 
     def _call_gemini(self, prompt, system, history, api_key, model, max_tokens, temperature, timeout):
-        url = PROVIDERS["gemini"]["base_url"].format(model=model, api_key=api_key)
+        clean_key = (api_key or "").strip()
+        encoded_key = urllib.parse.quote(clean_key)
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={encoded_key}"
 
         contents = []
         if history:
@@ -301,12 +314,21 @@ class LLMEngine:
         body = json.dumps(payload).encode("utf-8")
         req = urllib.request.Request(
             url, data=body,
-            headers={"Content-Type": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "x-goog-api-key": clean_key,
+            },
             method="POST"
         )
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-        return data["candidates"][0]["content"]["parts"][0]["text"]
+
+        candidates = data.get("candidates", [])
+        if candidates:
+            parts = candidates[0].get("content", {}).get("parts", [])
+            if parts and "text" in parts[0]:
+                return parts[0]["text"]
+        return data.get("text", "")
 
     def _call_openai_compat(self, prompt, system, history, api_key, model, max_tokens, temperature, timeout, base_url):
         messages = []

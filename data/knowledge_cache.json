@@ -108,5 +108,16 @@
     "page_url": "https://en.wikipedia.org/wiki/Surveillance_aircraft",
     "related_topics": [],
     "source": "Wikipedia Knowledge Base"
+  },
+  "drone related projects": {
+    "query": "drone related projects",
+    "title": "Drone warfare",
+    "display_title": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Drone warfare</span></span>",
+    "description": "Attack by one or more unmanned combat aerial vehicles",
+    "extract": "Drone warfare is the use of military robots and unmanned systems in warfare. The unmanned systems may be remote controlled by a pilot or have varying levels of autonomy during their mission. Types of unmanned systems and platforms include unmanned combat aerial vehicles (UCAV) or weaponized commercial unmanned aerial vehicles (UAV), unmanned surface vehicles (USV) or unmanned underwater vehicles (UUV), and unmanned ground vehicles (UGV). SUAVs and MAVs are man-portable UAVs and can be deployed for low-altitude, short-range support operations. Autonomous drones such as autonomous aircraft and LAWS utilize artificial intelligence or pre-programmed algorithms. As of 2019, the following nations have been identified as having operational UCAVs: China, France, Greece, India, Iran, Iraq, Israel, Italy, Pakistan, Poland, Russia, South Korea, Turkey, the United States, the United Kingdom, and Ukraine.",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/SBU_Alpha.jpg/330px-SBU_Alpha.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page_url": "https://en.wikipedia.org/wiki/Drone_warfare",
+    "related_topics": [],
+    "source": "Wikipedia Knowledge Base"
   }
 }

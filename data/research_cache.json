@@ -1431,5 +1431,121 @@
       "hackathon_takeaway": "Presents low-power telemetry, embedded edge inference, and latency-optimized deployment pipelines. Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees.",
       "research_takeaway": "Presents low-power telemetry, embedded edge inference, and latency-optimized deployment pipelines. Details decentralized verification, Byzantine fault tolerance, or cryptographic trust guarantees."
     }
+  ],
+  "drone related projects|6": [
+    {
+      "title": "drone-related-jobs-projected-to-rise",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1177/237455680202.n5",
+      "url": "https://doi.org/10.1177/237455680202.n5",
+      "paper_url": "https://doi.org/10.1177/237455680202.n5",
+      "pdf_url": "https://doi.org/10.1177/237455680202.n5",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "other",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Do-It-Yourself (DIY) drone projects",
+      "authors": [
+        "Ralph DeFrangesco",
+        "Stephanie DeFrangesco"
+      ],
+      "year": "2022",
+      "published_date": "2022",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1201/9781003201533-9",
+      "url": "https://doi.org/10.1201/9781003201533-9",
+      "paper_url": "https://doi.org/10.1201/9781003201533-9",
+      "pdf_url": "https://doi.org/10.1201/9781003201533-9",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "book-chapter",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Projects awarded £5m funding for AI and drone technology to tackle UK drug deaths",
+      "authors": [
+        "Unknown Author"
+      ],
+      "year": "2023",
+      "published_date": "2023",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1211/pj.2023.1.195888",
+      "url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "paper_url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "pdf_url": "https://doi.org/10.1211/pj.2023.1.195888",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "Truck-Drone Pickup and Delivery Problem with Drone Weight-Related Cost",
+      "authors": [
+        "Yang Xia",
+        "Tingying Wu",
+        "Beixin Xia",
+        "Junkang Zhang"
+      ],
+      "year": "Recent",
+      "published_date": "Recent",
+      "abstract": "Truck-drone delivery is widely used in logistics distribution for achieving sustainable development, in which drone weight greatly affects transportation cost. Thus, we consider a new combined truck-drone pickup and delivery problem with drone weight-related cost in the context of last-mile logistics. A system of integer programming is formulated with the objective of minimizing the total cost ...",
+      "doi": "10.3390/su152316342",
+      "url": "https://doi.org/10.3390/su152316342",
+      "paper_url": "https://doi.org/10.3390/su152316342",
+      "pdf_url": "https://doi.org/10.3390/su152316342",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "A new drone chasing drone approach based on deep reinforcement learning with accelerated rewards",
+      "authors": [
+        "Ziya Tan",
+        "Mehmet Karaköse"
+      ],
+      "year": "2025",
+      "published_date": "2025",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.1016/j.softx.2025.102201",
+      "url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "paper_url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "pdf_url": "https://doi.org/10.1016/j.softx.2025.102201",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "journal-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    },
+    {
+      "title": "USING PROGRAMMABLE DRONE IN EDUCATIONAL PROJECTS AND COMPETITIONS",
+      "authors": [
+        "Pavel Petrovič",
+        "Peter Verčimák"
+      ],
+      "year": "2023",
+      "published_date": "2023",
+      "abstract": "Abstract not available via CrossRef. Visit the DOI link for full text.",
+      "doi": "10.21125/edulearn.2023.1472",
+      "url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "paper_url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "pdf_url": "https://doi.org/10.21125/edulearn.2023.1472",
+      "arxiv_url": "",
+      "source": "CrossRef",
+      "category": "proceedings-article",
+      "hackathon_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation.",
+      "research_takeaway": "Formulates spatial perception, trajectory planning, and real-time robotic state estimation."
+    }
   ]
 }

@@ -9,6 +9,7 @@ from typing import Dict, List, Any
 
 # Try importing spaCy, with graceful fallback to regex tokenizer
 try:
+    # pyrefly: ignore [missing-import]
     import spacy
     try:
         nlp = spacy.load("en_core_web_sm")
